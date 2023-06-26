@@ -8,7 +8,7 @@ const Nav = () => {
     return (
         <nav>
             <div className="bg-azul-claro">
-                <div className="container mx-auto px-4 py-2 md:py-4 flex items-center justify-end ml-1">
+                <div className="container mx-auto px-4 py-2 md:py-4 flex items-center justify-between ml-1">
                     <div className="flex items-center">
                         <img className="text-white text-lg font-semibold h-23 w-23 ml-1" src={logo_you_i_lab} alt="Logo" />
 
@@ -27,6 +27,13 @@ const Nav = () => {
                             <a className="nav-link text-negro-claro hover:text-gray-300" href="#Contact">Contacto</a>
                         </li>
                     </ul>
+                    <div className="absolute top-0 right-0 flex items-end justify-end mt-3 mr-5">
+                        <div className="contents">
+                            <img src={logo_cns} alt="logo cns" className="h-20 ml-2" />
+                            <img src={logo_ipicyt} alt="logo ipicyt" className="h-20 absolute left-0" style={{ marginLeft: "-110px" }} />
+                        </div>
+                    </div>
+
                     <div className="relative">
                         <div className="dropdown inline-block">
                             <button className="bg-white text-gray-900 font-semibold py-2 px-4 rounded inline-flex items-center"
@@ -43,16 +50,12 @@ const Nav = () => {
                                     onClick="langHandler('1')">English</a></li>
                             </ul>
                         </div>
-                        </div>
-                        <div className="flex items-center justify-end ml-auto">
-  <img src={logo_ipicyt} alt="logo ipicyt" className="h-20" />
-  <img src={logo_cns} alt="logo cns" className="h-20" />
-</div>
 
 
 
 
-                    
+
+                    </div>
                 </div>
                 <div id="menuContainer" className="hidden md:block">
                     <hr className="border-gray-700 my-2" />
