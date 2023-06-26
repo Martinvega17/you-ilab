@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Nav from './components/nav'
+import Container_image from './components/container_image'
 import './App.css'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
     <div className="App">
     <Nav />
-    
+
     
   </div>
 );
