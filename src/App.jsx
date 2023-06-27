@@ -10,8 +10,7 @@ function App() {
 
     <div className="App">
     <Nav />
-
-    
+    <Container_image />
   </div>
 );
 }
