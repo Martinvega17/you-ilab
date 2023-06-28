@@ -1,5 +1,5 @@
 import React from 'react';
-import logo_you_i_lab from '../assets/you-i_lab1.png';
+import logo_you_i_lab from '../assets/you-i_lab.png';
 import logo_cns from '../assets/logo-cns.png';
 import logo_ipicyt from '../assets/logo-ipicyt.png';
 
@@ -18,14 +18,17 @@ const Nav = () => {
                             <a className="nav-link text-negro-claro hover:text-azul-dark-800 text-lg hover:underline" href="/">Home</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link text-negro-claro hover:text-azul-dark-800 text-lg hover:underline" href="#About">About us</a>
+                            <a className="nav-link text-negro-claro hover:text-azul-dark-800 text-lg hover:underline" href="/about">About</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link text-negro-claro over:text-azul-dark-800 text-lg hover:underline" href="#Projects">Projects</a>
+                            <a className="nav-link text-negro-claro over:text-azul-dark-800 text-lg hover:underline" href="/projects">Projects</a>
                         </li>
                         <li className="nav-item me-3">
-                        <a className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline" href="#Contact">Contact</a>
+                            <a className="nav-link text-negro-claro over:text-azul-dark-800 text-lg hover:underline" href="/contact">Contact</a>
                         </li>
+                        <li className="nav-item me-3">
+
+            </li>
                     </ul>
                     <div className="absolute top-0 right-0 flex items-end justify-end mt-3 mr-5 hidden lg:flex">
                         <div className="contents">
