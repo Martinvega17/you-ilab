@@ -16,8 +16,10 @@ const Nav = () => {
                         <img className="text-white text-lg font-semibold h-20 w-25 ml-1" src={logo_you_i_lab} alt="Logo" />
                     </div>
                     <ul className="navbar-nav hidden md:flex space-x-8 ml-12">
-                        <li className="nav-item me-3">
-                            <a className="nav-link text-negro-claro hover:text-azul-dark-800 text-lg hover:underline" href="/">Home</a>
+                    <li className="nav-item me-3">
+                            <Link to="you-ilab/home" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                                Home
+                            </Link>
                         </li>
                         <li className="nav-item me-3">
                             <Link to="you-ilab/about" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
