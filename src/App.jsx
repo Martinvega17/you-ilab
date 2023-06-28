@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import Nav from './components/nav';
-import Container_image from './components/container_image';
+import Div_section from './components/div.section';
 import Footer from './components/footer';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
@@ -13,21 +14,22 @@ import Contact from './components/pages/contact';
 import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Router>
       <div className="App">
+        <Helmet>
+          <title>You-i Lab - Youth Innovation Laboratory</title>
+        </Helmet>
         <Nav />
         <Routes>
-        <Route path="you-ilab/home" element={<Home />} />
-        <Route path="you-ilab/about" element={<About />} />
-        <Route path="you-ilab/projects" element={<Projects />} />
-        <Route path="you-ilab/publications" element={<Publications />} />
-        <Route path="you-ilab/contact" element={<Contact />} />
+          <Route path="you-ilab/home" element={<Home />} />
+          <Route path="you-ilab/about" element={<About />} />
+          <Route path="you-ilab/projects" element={<Projects />} />
+          <Route path="you-ilab/publications" element={<Publications />} />
+          <Route path="you-ilab/contact" element={<Contact />} />
         </Routes>
-        <Container_image />
         <Footer />
+        <Div_section />
       </div>
     </Router>
   );

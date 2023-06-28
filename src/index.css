@@ -86,3 +86,31 @@ nav a:hover {
 width: 174px;
 height: 130px;
 } */
+
+.icon-wrapper {
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #094293;
+}
+
+.div_container {
+  cursor: pointer;
+}
+
+.div_container small:hover {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+small {
+  font-size: 14px;
+}

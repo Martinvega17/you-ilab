@@ -9,7 +9,8 @@ export default {
         'azul-claro': '#d1e1f4',
         'negro-claro': '#444C59',
         'azul-dark': '#03045e',
-        'azul-footer': '#1E6091'
+        'azul-footer': '#114d97',
+        'div-azul': '#1E6091'
       },
     },
   },
