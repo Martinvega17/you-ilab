@@ -18,10 +18,10 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/publications" element={<Publications />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="you-ilab/about" element={<About />} />
+        <Route path="you-ilab/projects" element={<Projects />} />
+        <Route path="you-ilab/publications" element={<Publications />} />
+        <Route path="you-ilab/contact" element={<Contact />} />
         </Routes>
         <Container_image />
       </div>
