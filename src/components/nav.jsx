@@ -4,9 +4,6 @@ import logo_cns from '../assets/logo-cns.png';
 import logo_ipicyt from '../assets/logo-ipicyt.png';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
-
-
-
 const Nav = () => {
     return (
         <nav>
