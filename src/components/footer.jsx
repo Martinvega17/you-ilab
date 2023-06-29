@@ -51,7 +51,7 @@ const Footer = () => {
                             </a>
                         </span>
                         <span className="icon-wrapper">
-                            <a href="tel:+123456789">
+                            <a href="tel:+524448342000">
                                 <FontAwesomeIcon icon={faPhone} size="2x" className="icon" />
                             </a>
                         </span>

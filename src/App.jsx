@@ -18,7 +18,7 @@ function App() {
     <Router>
       <div className="App">
         <Helmet>
-          <title>You-i Lab - Youth Innovation Laboratory</title>
+          <title>You-i Lab | Youth Innovation Laboratory</title>
         </Helmet>
         <Nav />
         <Routes>

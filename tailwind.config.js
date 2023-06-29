@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html",
-  "./src/**/*.{js,jsx}"
-],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Roboto"],
+      },
       colors: {
         'azul-claro': '#d1e1f4',
         'negro-claro': '#444C59',
@@ -16,4 +17,3 @@ export default {
   },
   plugins: [],
 }
-
