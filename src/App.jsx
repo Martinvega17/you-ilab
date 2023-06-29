@@ -12,6 +12,7 @@ import Projects from './components/pages/projects'; // Import projects page comp
 import Publications from './components/pages/publications'; // Import publications page component
 import Contact from './components/pages/contact'; // Import contact page component
 
+
 import './index.css'; // Import main CSS file
 
 function App() {
