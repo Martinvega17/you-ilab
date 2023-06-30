@@ -16,7 +16,7 @@ const Footer = () => {
                         <h3 className="text-lg font-bold mb-5">USEFUL LINKS</h3>
                         <ul className="navbar-nav">
                             <li className="nav-item me-3 mb-4">
-                                <a className="nav-link text-white hover:text-gray-300" href="#https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">CONACYT</a>
+                                <a className="nav-link text-white hover:text-gray-300" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">CONACYT</a>
                             </li>
                             <li className="nav-item me-3 mb-4">
                                 <a className="nav-link text-white hover:text-gray-300" href="https://www.ipicyt.edu.mx/" target="_blank" rel="noopener noreferrer">IPICYT</a>

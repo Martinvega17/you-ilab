@@ -122,3 +122,17 @@ h1,h2,h3,h4,h5,h6 {
 h1,h2 {
   font-size: 36px;
 }
+.title_aliados{
+  font-family: 'Rajdhani';
+  font-size: 32px;
+  color: #2a2e3e;
+  text-align: center;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.custom-carousel .carousel .carousel-status {
+  background-color: gray;
+}
+
+

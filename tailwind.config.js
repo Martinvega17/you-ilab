@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto"],
+        sans: ["Roboto", "Rajdhani"],
       },
       colors: {
         'azul-claro': '#d1e1f4',

@@ -43,7 +43,6 @@ const Contact = () => {
             <input type="submit" value="Submit"
               className="bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 cursor-pointer mx-auto w-150 text-lg" />
           </div>
-
         </form>
       </div>
     </div>
