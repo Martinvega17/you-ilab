@@ -14,7 +14,7 @@ const Nav = () => {
                     </div>
                     <ul className="navbar-nav hidden md:flex space-x-8 ml-12">
                     <li className="nav-item me-3">
-                            <Link to="/" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <Link to="you-ilab/" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
                                 Home
                             </Link>
                         </li>
