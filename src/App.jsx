@@ -24,7 +24,7 @@ function App() {
         </Helmet>
         <Nav /> {/* Render navigation component */}
         <Routes>
-          <Route path="you-ilab/home" element={<Home />} /> {/* Route and render home page component */}
+          <Route path="you-ilab/" element={<Home />} /> {/* Route and render home page component */}
           <Route path="you-ilab/about" element={<About />} /> {/* Route and render about page component */}
           <Route path="you-ilab/projects" element={<Projects />} /> {/* Route and render projects page component */}
           <Route path="you-ilab/publications" element={<Publications />} /> {/* Route and render publications page component */}
