@@ -1,19 +1,19 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelopeOpen, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
-        <footer id="sticky-footer" className="flex-shrink-0 py-8 bg-dark-900 text-white">
-            <div className="container-fluid text-center bg-azul-footer">
-                <div className="grid grid-cols-3 gap-4 ml-5 mr-5">
-                    <div className="col-span-1 mt-5">
-                        <h3 className="text-lg font-bold mb-5">YOUTH INNOVATION LABORATORY</h3>
+        <footer id="sticky-footer" className="flex-shrink-0 py-8 bg-dark-900 text-white bg-azul-footer" style={{ height: '618px', width: '100%' }}>
+            <div className="container mx-auto text-center mt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-5">
+                    <div className="mt-5">
+                        <h3 className="text-lg font-bold mb-5 title-footer">YOUTH INNOVATION LABORATORY</h3>
                         <p className="mb-5">The You-i Lab is hosted by the National Supercomputing Center (CNS) in San Luis Potosí, which is a state-of-the-art HPC research facility that focuses on the development of large scale industrial projects. The CNS that is managed by the Instituto Potosino de Investigación Científica y Tecnológica (IPICYT).</p>
                     </div>
-                    <div className="col-span-1 mt-5">
-                        <h3 className="text-lg font-bold mb-5">USEFUL LINKS</h3>
+                    <div className="mt-5">
+                        <h3 className="text-lg font-bold mb-5 title-footer">USEFUL LINKS</h3>
                         <ul className="navbar-nav">
                             <li className="nav-item me-3 mb-4">
                                 <a className="nav-link text-white hover:text-gray-300" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">CONACYT</a>
@@ -29,34 +29,56 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-span-1 mt-5 mb-40">
-                        <h3 className="text-lg font-bold mb-5">CONTACT</h3>
-                        <p className="mb-1">Camino a la Presa San José 2055, Lomas</p>
-                        <p className="mb-1">4 sección San Luis Potosí, 78216 SLP, México.</p>
-                        <p className="mb-1">you-i.lab@ipicyt.edu.mx</p>
-                        <p className="mb-5">(444) 834-2000 ext. 2117</p>
-                        <span className="icon-wrapper">
-                            <a href="https://www.facebook.com/">
-                                <FontAwesomeIcon icon={faFacebook} size="2x" className="icon" />
-                            </a>
-                        </span>
-                        <span className="icon-wrapper">
-                            <a href="https://twitter.com/">
-                                <FontAwesomeIcon icon={faTwitter} size="2x" className="icon" />
-                            </a>
-                        </span>
-                        <span className="icon-wrapper">
-                            <a href="https://www.linkedin.com/">
-                                <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon" />
-                            </a>
-                        </span>
-                        <span className="icon-wrapper">
-                            <a href="tel:+524448342000">
-                                <FontAwesomeIcon icon={faPhone} size="2x" className="icon" />
-                            </a>
-                        </span>
-                    </div>
+                    <div className="mt-5 mb-40 text-left">
+                        <h3 className="text-lg font-bold mb-5 title-footer ml-12">CONTACTO</h3>
+                        <p>
+                            <FontAwesomeIcon icon={faRocket} />
+                            <span className="ml-2">
+                                Camino a la Presa de San José 2055, Lomas 4a Sección, 78216 San Luis Potosí, S.L.P., México.
+                            </span>
+                        </p>
+                        <p>
+                            <FontAwesomeIcon icon={faPhone} />
+                            <span> +52 444 834 2000</span>
+                        </p>
+                        <p className="mb-10">
+                            <FontAwesomeIcon icon={faEnvelopeOpen} />
+                            <span className="ml-2"> you-i.lab@ipicyt.edu.mx</span>
+                        </p>
 
+                        <div className="col-xl-3 col-lg-3">
+                            <div className="footer-widget opening-hour-widget">
+                                <h4 className="title text-lg font-bold mb-5 title-footer ml-12">Redes</h4>
+                                <div className="social-links">
+                                    <span className="icon-wrapper rounded-full inline-grid border-white border">
+                                        <a href="https://www.facebook.com/">
+                                            <FontAwesomeIcon icon={faFacebook} size="2x" className="icon p-2" />
+                                        </a>
+                                    </span>
+                                    <span className="icon-wrapper rounded-full inline-grid border-white border">
+                                        <a href="https://twitter.com/">
+                                            <FontAwesomeIcon icon={faTwitter} size="2x" className="icon p-2" />
+                                        </a>
+                                    </span>
+                                    <span className="icon-wrapper rounded-full inline-grid border-white border">
+                                        <a href="https://www.linkedin.com/">
+                                            <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon p-2" />
+                                        </a>
+                                    </span>
+                                    <span className="icon-wrapper rounded-full inline-grid border-white border">
+                                        <a href="tel:+524448342000">
+                                            <FontAwesomeIcon icon={faPhone} size="2x" className="icon p-2" />
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-10">
+                    <p className="text-white text-md text-center">
+                        <p>Powered by <b>You I Lab</b> - 2023</p>
+                    </p>
                 </div>
             </div>
         </footer>

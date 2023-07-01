@@ -9,7 +9,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -93,12 +94,12 @@ height: 130px;
 }
 
 .icon {
-  color: white;
+  color: #fff;
   transition: color 0.3s;
 }
 
 .icon:hover {
-  color: #094293;
+  color: #20A0CA;
 }
 
 .div_container {
@@ -117,10 +118,15 @@ small {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto';
+  color: #242424;
 }
 
 h1,h2 {
   font-size: 36px;
+}
+
+.title-footer {
+  color: #fff;
 }
 .title_aliados{
   font-family: 'Rajdhani';
@@ -135,4 +141,10 @@ h1,h2 {
   background-color: gray;
 }
 
+.ml-cuestom {
+  margin-left: 170px;
+}
 
+.mr-cuestom {
+  margin-right: 200px;
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Nav from './components/nav'; // Import navigation component
-import Div_section from './components/div.section'; // Import div section component
 import Footer from './components/footer'; // Import footer component
 
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom'; // Import React Router routes and links
@@ -31,7 +30,7 @@ function App() {
           <Route path="you-ilab/contact" element={<Contact />} /> {/* Route and render contact page component */}
         </Routes>
         <Footer /> {/* Render footer component */}
-        <Div_section /> {/* Render div section component */}
+        
       </div>
     </Router>
   );
