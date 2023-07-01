@@ -48,7 +48,7 @@ const Footer = () => {
 
                         <div className="col-xl-3 col-lg-3">
                             <div className="footer-widget opening-hour-widget">
-                                <h4 className="title text-lg font-bold mb-5 title-footer ml-12">Redes</h4>
+                                <h4 className="title text-lg font-bold mb-5 title-footer ml-12 text- ">Redes</h4>
                                 <div className="social-links">
                                     <span className="icon-wrapper rounded-full inline-grid border-white border">
                                         <a href="https://www.facebook.com/">
