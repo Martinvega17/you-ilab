@@ -99,7 +99,9 @@ height: 130px;
 }
 
 .icon:hover {
-  color: #20A0CA;
+  background: linear-gradient(90deg, rgba(76, 188, 211, 1) 0%, rgba(1, 140, 196, 1) 100%);
+    border-radius: 40px;
+
 }
 
 .div_container {
@@ -147,4 +149,22 @@ h1,h2 {
 
 .mr-cuestom {
   margin-right: 200px;
+}
+
+.carousel-image {
+  width: 190px;
+  height: 105px;
+}
+
+.carrusel-images {
+  width: 1500px;
+  height: 516px;
+}
+.text-aliados {
+  font-family:'Roboto';
+  color: #101b2f;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 26px;
+  font-style: normal;
 }
