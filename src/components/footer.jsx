@@ -5,10 +5,10 @@ import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-
 
 const Footer = () => {
     return (
-        <footer id="sticky-footer" className="flex-shrink-0 py-8 bg-dark-900 text-white bg-azul-footer" style={{ height: '618px', width: '100%' }}>
+        <footer id="sticky-footer" className="flex-shrink-0 py-8 bg-dark-900 text-white bg-azul-footer" style={{ height: '100%', width: '100%' }}>
             <div className="container mx-auto text-center mt-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-5">
-                    <div className="mt-5">
+                    <div className="mt-5 lg:ml-40 md:ml-0">
                         <h3 className="text-lg font-bold mb-5 title-footer">YOUTH INNOVATION LABORATORY</h3>
                         <p className="mb-5">The You-i Lab is hosted by the National Supercomputing Center (CNS) in San Luis Potosí, which is a state-of-the-art HPC research facility that focuses on the development of large scale industrial projects. The CNS that is managed by the Instituto Potosino de Investigación Científica y Tecnológica (IPICYT).</p>
                     </div>
@@ -29,7 +29,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="mt-5 mb-40 text-left">
+                    <div className="mt-5 mb-40 lg:text-left md:text-center lg:mr-52 sm:mr-0">
                         <h3 className="text-lg font-bold mb-5 title-footer ml-12">CONTACTO</h3>
                         <p>
                             <FontAwesomeIcon icon={faRocket} />
@@ -46,9 +46,9 @@ const Footer = () => {
                             <span className="ml-2"> you-i.lab@ipicyt.edu.mx</span>
                         </p>
 
-                        <div className="col-xl-3 col-lg-3">
+                        <div className="col-xl-3 col-lg-3 lg:text-left md:text-center">
                             <div className="footer-widget opening-hour-widget">
-                                <h4 className="title text-lg font-bold mb-5 title-footer ml-12 text- ">Redes</h4>
+                                <h4 className="title-footer text-lg font-bold mb-5 ml-12 ">Redes</h4>
                                 <div className="social-links">
                                     <span className="icon-wrapper rounded-full inline-grid border-white border">
                                         <a href="https://www.facebook.com/">
