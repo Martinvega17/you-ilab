@@ -2,6 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -17,6 +27,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #101b2f;
+  line-height: 26px;
+
 }
 
 a {
@@ -69,25 +89,6 @@ nav a:hover {
   color: #535bf2;
 }
 
-/* #ipicyt {
-  position: absolute;
-  bottom: 0;
-  right: 150px;
-  height: 70px;
-}
-
-#cns {
-  position: absolute;
-  bottom: 0;
-  right: 150px;
-  height: 70px;
-} */
-
-/* #logo {
-width: 174px;
-height: 130px;
-} */
-
 .icon-wrapper {
   margin-right: 13px;
   cursor: pointer;
@@ -99,7 +100,7 @@ height: 130px;
 }
 
 .icon:hover {
-  background: linear-gradient(90deg, rgba(76, 188, 211, 1) 0%, rgba(1, 140, 196, 1) 100%);
+  background: linear-gradient(90deg, rgb(76, 188, 211) 0%, rgba(1, 140, 196, 1) 100%);
     border-radius: 40px;
 
 }
@@ -119,12 +120,35 @@ small {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Roboto';
-  color: #242424;
+  font-family: "Rajdhani", sans-serif;
+  color: #101b2f;
+  line-height: 66px;
+  font-size: 60px;
 }
 
-h1,h2 {
-  font-size: 36px;
+h2 {
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.section_title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  position: relative;
+  
+}
+.nosotros {
+  font-size: 60pt;
+}
+
+.title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .title-footer {
@@ -143,13 +167,6 @@ h1,h2 {
   background-color: gray;
 }
 
-.ml-170 {
-  margin-left: 170px;
-}
-
-.mr-cuestom {
-  margin-right: 200px;
-}
 
 .carousel-image {
   width: 190px;
@@ -168,3 +185,17 @@ h1,h2 {
   line-height: 26px;
   font-style: normal;
 }
+
+form {
+  color: #424242;
+}
+
+#cns:hover {
+  filter: brightness(150%) saturate(80%) hue-rotate(0deg);
+}
+
+#logo-ipicyt:hover {
+  filter: brightness(150%) saturate(80%) hue-rotate(0deg);
+}
+
+
