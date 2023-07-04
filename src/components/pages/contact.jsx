@@ -16,9 +16,9 @@ const Contact = () => {
       </div>
       <div className="w-1/2 mr-5">
 
-        <h1 className="text-center">Contact Us</h1>
+        <h1 className="text-center">Contactanos</h1>
         <form action="enviar.php" method="POST">
-          <legend className='mb-5'>Send us a message</legend>
+          <legend className='mb-5 text-lg font-bold'>Envia un mensaje</legend>
           <div className="mb-4">
             <label htmlFor="name">Name</label>
             <input type="text" name="name" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='Jane Doe' required />
@@ -39,7 +39,7 @@ const Contact = () => {
             <label htmlFor="">Message</label>
             <textarea className="w-full border border-gray-300 rounded px-3 py-2" rows="6" placeholder='Write your message'></textarea>
           </div>
-          <div className="text-center">
+          <div className="text-center mb-10">
             <input type="submit" value="Submit"
               className="bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 cursor-pointer mx-auto w-150 text-lg" />
           </div>

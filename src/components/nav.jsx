@@ -15,22 +15,22 @@ const Nav = () => {
                     <ul className="navbar-nav hidden md:flex space-x-8 ml-12">
                         <li className="nav-item me-3">
                             <Link to="you-ilab/" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
-                                Home
+                                Inicio
                             </Link>
                         </li>
                         <li className="nav-item me-3">
                             <Link to="you-ilab/about" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
-                                About us
+                                Nosotros
                             </Link>
                         </li>
                         <li className="nav-item me-3">
                             <Link to="you-ilab/projects" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
-                                Projects
+                                Proyectos
                             </Link>
                         </li>
                         <li className="nav-item me-3">
                             <Link to="you-ilab/contact" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
-                                Contact
+                                Contacto
                             </Link>
                         </li>
                         <li className="nav-item me-3">
@@ -39,10 +39,12 @@ const Nav = () => {
                     </ul>
                     <div className="absolute top-0 right-0 flex items-end justify-end mt-3 mr-5 hidden lg:flex">
                         <div className="contents">
-                            <img src={logo_cns} alt="logo cns" className="h-20 ml-2" />
-                            <img src={logo_ipicyt} alt="logo ipicyt" className="h-20 absolute left-0" style={{ marginLeft: "-110px" }} />
+                            <img src={logo_cns} alt="logo cns" className="h-20 ml-2" id='cns' />
+                            <img src={logo_ipicyt} alt="logo ipicyt" className="h-20 absolute left-0" id='logo-ipicyt' style={{ marginLeft: "-110px" }} />
                         </div>
                     </div>
+
+
 
                     <div className="relative">
                         <div className="dropdown inline-block">
