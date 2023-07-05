@@ -8,8 +8,7 @@ import About from './components/pages/About';
 import Projects from './components/pages/Projects';
 import Publications from './components/pages/Publications';
 import Contact from './components/pages/Contact';
-import Carrusel from './components/carrusel';
-import AliadosCarousel from './components/aliados';
+
 import Menu from './components/menu';
 import './index.css';
 import './menu.css';
@@ -37,13 +36,7 @@ function App() {
 
         </div>
 
-        <div className="main-content">
-          {/* Aquí colocar los elementos fuera del menú */}
-          <Carrusel />
-          <AliadosCarousel />
-          
-          
-        </div>
+     
         
         <Footer />
       </div>

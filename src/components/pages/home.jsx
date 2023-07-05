@@ -9,13 +9,10 @@ const Home = () => {
             <Helmet>
                 <title>Home | You-i Lab</title>
             </Helmet>
-            {/* <Carrusel />
-            <AliadosCarousel /> */}
+            <Carrusel />
+            <AliadosCarousel />
             
-        {/* <div className="main-content">
-          <Carrusel />
-          <AliadosCarousel />
-        </div> */}
+        
         </div>
     );
 };
