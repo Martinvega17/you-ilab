@@ -2,7 +2,8 @@ import React from 'react';
 import logo_you_i_lab from '../assets/logo-you-i_lab.png';
 import logo_cns from '../assets/logo-cns.png';
 import logo_ipicyt from '../assets/logo-ipicyt.png';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+// import Menu from './menu';
 
 const Nav = () => {
     return (
@@ -14,27 +15,24 @@ const Nav = () => {
                     </div>
                     <ul className="navbar-nav hidden md:flex space-x-8 ml-12">
                         <li className="nav-item me-3">
-                            <Link to="you-ilab/" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <Link to="/you-ilab/" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
                                 Inicio
                             </Link>
                         </li>
                         <li className="nav-item me-3">
-                            <Link to="you-ilab/about" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <Link to="/you-ilab/about" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
                                 Nosotros
                             </Link>
                         </li>
                         <li className="nav-item me-3">
-                            <Link to="you-ilab/projects" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <Link to="/you-ilab/projects" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
                                 Proyectos
                             </Link>
                         </li>
                         <li className="nav-item me-3">
-                            <Link to="you-ilab/contact" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <Link to="/you-ilab/contact" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
                                 Contacto
                             </Link>
-                        </li>
-                        <li className="nav-item me-3">
-
                         </li>
                     </ul>
                     <div className="absolute top-0 right-0 flex items-end justify-end mt-3 mr-5 hidden lg:flex">
@@ -43,8 +41,6 @@ const Nav = () => {
                             <img src={logo_ipicyt} alt="logo ipicyt" className="h-20 absolute left-0" id='logo-ipicyt' style={{ marginLeft: "-110px" }} />
                         </div>
                     </div>
-
-
 
                     <div className="relative">
                         <div className="dropdown inline-block">
@@ -65,6 +61,8 @@ const Nav = () => {
                     <hr className="border-gray-700 my-2" />
                 </div>
             </div>
+
+            {/* <Menu /> */}
         </nav>
     );
 };

@@ -1,36 +1,39 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Nav from './components/nav'; // Import navigation component
-import Footer from './components/footer'; // Import footer component
-
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom'; // Import React Router routes and links
-
-import Home from './components/pages/home'; // Import home page component
-import About from './components/pages/about'; // Import about page component
-import Projects from './components/pages/projects'; // Import projects page component
-import Publications from './components/pages/publications'; // Import publications page component
-import Contact from './components/pages/contact'; // Import contact page component
-
-
-import './index.css'; // Import main CSS file
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Projects from './components/pages/Projects';
+import Publications from './components/pages/Publications';
+import Contact from './components/pages/Contact';
+import Menu from './components/menu';
+import './index.css';
+import './menu.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Helmet>
-          <title>You-i Lab | Youth Innovation Laboratory</title> {/* Page title */}
+          <title>You-i Lab | Youth Innovation Laboratory</title>
         </Helmet>
-        <Nav /> {/* Render navigation component */}
-        <Routes>
-          <Route path="you-ilab/" element={<Home />} /> {/* Route and render home page component */}
-          <Route path="you-ilab/about" element={<About />} /> {/* Route and render about page component */}
-          <Route path="you-ilab/projects" element={<Projects />} /> {/* Route and render projects page component */}
-          <Route path="you-ilab/publications" element={<Publications />} /> {/* Route and render publications page component */}
-          <Route path="you-ilab/contact" element={<Contact />} /> {/* Route and render contact page component */}
-        </Routes>
-        <Footer /> {/* Render footer component */}
-        
+        <Nav />
+        <Menu />
+
+        <div className="content">
+          <Routes>
+            <Route path="/you-ilab/" element={<Home />} />
+            <Route path="/you-ilab/about" element={<About />} />
+            <Route path="/you-ilab/projects" element={<Projects />} />
+            <Route path="/you-ilab/publications" element={<Publications />} />
+            <Route path="/you-ilab/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Home />
+
+        <Footer />
       </div>
     </Router>
   );

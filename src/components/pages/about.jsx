@@ -28,9 +28,9 @@ const About = () => {
                                 Empoderar a la juventud a través del uso de las tecnologías de la información y la comunicación en el contexto de proyectos de impacto social.
                             </p>
                         </div>
-                        <div className="about_content3">
+                        <div className="about_content3 mr-6">
                             <h2 className="section mb-8">Vision</h2>
-                            <p>
+                            <p className='max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl'>
                                 Contar con los mejores talentos y creativos interesados en gestionar y ejecutar proyectos interdisciplinarios innovadores centrados en el bienestar social.
                             </p>
                         </div>

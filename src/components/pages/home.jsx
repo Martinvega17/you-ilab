@@ -1,9 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Carrusel from '../carrusel';
+import Carrusel from '../carrusel' ;
 import AliadosCarousel from '../aliados';
-
-
 
 const Home = () => {
     return (
@@ -13,8 +11,6 @@ const Home = () => {
             </Helmet>
             <Carrusel />
             <AliadosCarousel />
-
-
         </div>
     );
 };
