@@ -36,8 +36,8 @@ const Carrusel = () => {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         initialSlide: 2
       }
     },
@@ -89,14 +89,14 @@ const Carrusel = () => {
     }
   ];
 
-  return (
+ return (
     <div>
       <h2 className='text-center mt-10'>Proyectos</h2>
       <Slider {...settings} responsive={responsiveSettings}>
         {images.map((image) => (
           <div key={image.id}>
             <a href={image.url} target="_blank" rel="noopener noreferrer">
-              <img src={image.src} alt={image.alt} className='carrusel-images' />
+              <img src={image.src} alt={image.alt} className='carrusel-images'  />
             </a>
           </div>
         ))}
@@ -104,5 +104,4 @@ const Carrusel = () => {
     </div>
   );
 };
-
 export default Carrusel

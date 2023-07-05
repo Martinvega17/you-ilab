@@ -177,6 +177,7 @@ h2 {
   width: 1500px;
   height: 516px;
 }
+
 .text-aliados {
   font-family:'Roboto';
   color: #101b2f;
@@ -199,3 +200,7 @@ form {
 }
 
 
+.menu-container {
+  position: relative;
+  z-index: 1;
+}
