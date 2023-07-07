@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom';
 const Menu = () => {
     return (
         <div>
-            <div id="menuContainer" className="hidden md:block">
-                <hr className="border-gray-700 my-2" />
-            </div>
-
             <div className="menu-container">
                 <label htmlFor="menu-toggle" className="menu-button"></label>
                 <ul className="menu">

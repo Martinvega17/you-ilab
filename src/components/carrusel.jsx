@@ -4,12 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import centinela from '../assets/proyectos/logo_centinela.png';
-import wenet from '../assets/proyectos/logo_wenet.png';
-import centinela_salud from '../assets/proyectos/logo_centinela_salud.png';
-import muframex from '../assets/proyectos/logo_muframex.png';
-import horizonte from '../assets/proyectos/logo_hsaludable.png';
-import juventud from '../assets/proyectos/logo_juventud.png';
+import centinela from '../assets/projects/logo_centinela.png';
+import wenet from '../assets/projects/logo_wenet.png';
+import centinela_salud from '../assets/projects/logo_centinela_salud.png';
+import muframex from '../assets/projects/logo_muframex.png';
+import horizonte from '../assets/projects/logo_hsaludable.png';
+import juventud from '../assets/projects/logo_juventud.png';
 
 const Carrusel = () => {
   const settings = {

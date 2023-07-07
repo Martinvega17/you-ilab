@@ -1,3 +1,10 @@
+/**
+ * The above code is a React component that renders a footer section with contact information, useful
+ * links, and social media icons.
+ * 
+ * @return The Footer component is returning a JSX element representing the footer section of a
+ * website.
+ */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelopeOpen, faRocket } from '@fortawesome/free-solid-svg-icons';
@@ -7,7 +14,7 @@ const Footer = () => {
     return (
         <footer id="sticky-footer" className="flex-shrink-0 py-8 bg-dark-900 text-white bg-azul-footer h-full w-full">
             <div className="container mx-auto text-center mt-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-5">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 mx-5">
                     <div className="mt-5 lg:ml-40 md:ml-0">
                         <h3 className="text-lg font-bold mb-5 title-footer">YOUTH INNOVATION LABORATORY</h3>
                         <p className="mb-5">El You-i Lab está alojado en el Centro Nacional de Supercómputo (CNS) de San Luis Potosí, que es una instalación de investigación HPC de vanguardia que se centra en el desarrollo de proyectos industriales a gran escala. El CNS que está gestionado por el Instituto Potosino de Investigación Científica y Tecnológica (IPICYT).</p>
@@ -29,7 +36,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="mt-5 mb-40 lg:text-left md:text-center lg:mr-52 sm:mr-0">
+                    <div className="mt-5 mb-14 lg:text-left md:text-center lg:mr-52 sm:mr-0">
                         <h3 className="text-lg font-bold mb-5 title-footer ml-12">CONTACTO</h3>
                         <p>
                             <FontAwesomeIcon icon={faRocket} />
@@ -45,10 +52,9 @@ const Footer = () => {
                             <FontAwesomeIcon icon={faEnvelopeOpen} />
                             <span className="ml-2"> you-i.lab@ipicyt.edu.mx</span>
                         </p>
-
-                        <div className="col-xl-3 col-lg-3 lg:text-left md:text-center">
+                        <div className="lg:text-left md:text-center">
                             <div className="footer-widget opening-hour-widget">
-                                <h4 className="title-footer text-lg font-bold mb-5 ml-12 ">Redes</h4>
+                                <h4 className="title-footer text-lg font-bold mb-5 ml-12">Redes</h4>
                                 <div className="social-links">
                                     <span className="icon-wrapper rounded-full inline-grid border-white border">
                                         <a href="https://www.facebook.com/">
@@ -76,19 +82,15 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="flex justify-between mt-10 ml-40">
-                    <div className="text-left">
-                        <p className="text-md ml-2">
-                            © 2023 You i Lab. All rights reserved.
-                        </p>
-                    </div>
-                    <div className="text-white">
-                        <p className="text-md mr-52">
-                            Powered by <b>You I Lab</b> - 2023
-                        </p>
-                    </div>
-                </div>
+                <div className="flex flex-col items-center mt-10">
+                    <p className="text-center text-md mb-4">
+                        © 2023 You i Lab. All rights reserved.
+                    </p>
+                    <p className="text-center text-md">
+                        Powered by <b>You I Lab</b> - 2023
+                    </p>
 
+                </div>
             </div>
         </footer>
     );

@@ -11,8 +11,6 @@ const Home = () => {
             </Helmet>
             <Carrusel />
             <AliadosCarousel />
-            
-        
         </div>
     );
 };

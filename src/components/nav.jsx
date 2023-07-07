@@ -1,41 +1,62 @@
 import React from 'react';
-import logo_you_i_lab from '../assets/logo-you-i_lab.png';
-import logo_cns from '../assets/logo-cns.png';
-import logo_ipicyt from '../assets/logo-ipicyt.png';
-import { Link } from 'react-router-dom';
-// import Menu from './menu';
+import logo_you_i_lab from '../assets/logos/logo-you-i_lab.png';
+import logo_cns from '../assets/logos/logo-cns.png';
+import logo_ipicyt from '../assets/logos/logo-ipicyt.png';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Nav = () => {
+    const location = useLocation();
+
     return (
         <nav>
-            <div className="bg-azul-claro">
-                <div className="container mx-auto px-4 py-2 md:py-1 flex items-center justify-between ml-1">
+            <div className="bg-azul-claro m-0 p-0">
+                <div className="container mx-auto px-4 py-0 md:py-0 flex items-center justify-between ml-1 ">
                     <div className="flex items-center">
-                        <img className="text-white text-lg font-semibold h-20 w-25 ml-1" src={logo_you_i_lab} alt="Logo" />
+                        <img className="text-white text-lg font-semibold h-20  w-full ml-1" src={logo_you_i_lab} alt="Logo" />
                     </div>
                     <ul className="navbar-nav hidden md:flex space-x-8 ml-12">
                         <li className="nav-item me-3">
-                            <Link to="/you-ilab/" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <NavLink
+                                to="/you-ilab/"
+                                className={({ isActive }) =>
+                                    isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg '
+                                }
+                            >
                                 Inicio
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item me-3">
-                            <Link to="/you-ilab/about" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <NavLink
+                                to="/you-ilab/about"
+                                className={({ isActive }) =>
+                                    isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg '
+                                }
+                            >
                                 Nosotros
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item me-3">
-                            <Link to="/you-ilab/projects" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <NavLink
+                                to="/you-ilab/projects"
+                                className={({ isActive }) =>
+                                isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg '
+                            }
+                        >
                                 Proyectos
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item me-3">
-                            <Link to="/you-ilab/contact" className="nav-link text-negro-claro over:text-azuk-darl-800 text-lg hover:underline">
+                            <NavLink
+                                to="/you-ilab/contact"
+                                className={({ isActive }) =>
+                                isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg '
+                            }
+                        >
                                 Contacto
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
-                    <div className="absolute top-0 right-0 flex items-end justify-end mt-3 mr-5 hidden lg:flex">
+                    <div className="absolute top-0 right-0 flex items-end justify-end hidden lg:flex mt-0 mr-0 ">
                         <div className="contents">
                             <img src={logo_cns} alt="logo cns" className="h-20 ml-2" id='cns' />
                             <img src={logo_ipicyt} alt="logo ipicyt" className="h-20 absolute left-0" id='logo-ipicyt' style={{ marginLeft: "-110px" }} />
@@ -57,12 +78,7 @@ const Nav = () => {
                         </div>
                     </div>
                 </div>
-                <div id="menuContainer" className="hidden md:block">
-                    <hr className="border-gray-700 my-2" />
-                </div>
             </div>
-
-            {/* <Menu /> */}
         </nav>
     );
 };

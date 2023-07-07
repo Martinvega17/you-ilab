@@ -12,10 +12,18 @@
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Cera-Medium';
+  src: url('../fonts/Cera-Regular.ttf') format('truetype');
+}
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-family: ce;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -203,4 +211,13 @@ form {
 .menu-container {
   position: relative;
   z-index: 1;
+}
+
+.about_us {
+  font-family: Cera-Medium;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 41px;
+  color: #038cd4;
 }
