@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Roboto", "Rajdhani"],
+        cera: ["Cera-Medium", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
       },
       colors: {
         'azul-claro': '#d1e1f4',
