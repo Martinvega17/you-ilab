@@ -18,7 +18,7 @@ const About = () => {
                 </div>
 
             </div>
-            <div className="lg:ml-40 ">
+            <div className="lg:ml-40 md:ml-5">
 
                 <div className="row">
                     <div className="flex mt-8 mb-5">
@@ -61,7 +61,7 @@ const About = () => {
                             <p className=" mb-4">El laboratorio You+i del IPICYT (Instituto Potosino de Investigación Científica y Tecnológica) se fundó en 2013 con el objetivo de investigar y desarrollar tecnologías relacionadas con la interacción humano-máquina. Su nombre proviene de la combinación de la palabra "you" que hace referencia al usuario y la letra "i" de interfaz, buscando crear una "yuxtaposición" entre los seres humanos y la tecnología, a través del diseño de interfaces intuitivas y eficientes que mejoren la experiencia del usuario. Desde entonces, el laboratorio ha colaborado en diversos proyectos de investigación e innovación en este campo.</p>
                         </div>
                     </div>
-                    <div className="container">
+                    <div className="content_team lg:mr-20 md:mr-5">
                         <div className="content">
                             <div className="title_team">
                                 <h2 className='inherit vertical-align about_us'>NUESTRO EQUIPO DE TRABAJO</h2>
