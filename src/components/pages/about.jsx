@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import img from '/you-ilab/src/assets/img1.jpg';
+import team from '../../assets/team.jpg';
 import IdPage from './id';
 
 const About = () => {
@@ -35,7 +35,7 @@ const About = () => {
                         {/* image */}
                         <div className="about_content lg:mr-52 md:mr-5">
                             <div className="about-left ">
-                                <img src={img} className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl "></img>
+                                <img src={team} className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl "></img>
                             </div>
                         </div>
                     </div>
