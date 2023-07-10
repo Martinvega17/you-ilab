@@ -441,3 +441,7 @@ nav {
 	-o-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
 	transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
 }
+
+.collaborators h1, h2 {
+  color: #fff;
+}

@@ -1,8 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
 .menu-container {
     margin: 0;
     padding: 0;
     background-color: #171717;
     color: #ffffffcc;
+}
+
+header .logo {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+header .logo:hover {
+    transform: rotate(-90deg);
+    color: #c70239;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contenido h2 {
+    font-size: 45px;
+    color: #292a2d;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.contenido .color {
+    color: #c70239;
+}
+
+.contenido p {
+    font-size: 20px;
 }
 
 .menu-container {
@@ -30,8 +87,7 @@
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #424241;
-    ;
+    background-color: #ffffffcc;
     position: absolute;
     left: 10px;
     transition: transform 0.3s ease;
@@ -52,6 +108,7 @@
 .menu-button.open:after {
     transform: translateY(-14px) rotate(-45deg);
 }
+
 
 .menu {
     list-style-type: none;
@@ -132,9 +189,4 @@
     .menu-text {
         font-size: 50px;
     }
-}
-
-
-.collaborators h1, h2 {
-    color: #fff;
 }
