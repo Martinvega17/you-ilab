@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import salvador from '../../assets/team/salvador.jpg';
 import viridiana from '../../assets/team/viridiana.jpg';
 import lourdes from '../../assets/team/lourdes.jpg';
+import miguel from '../../assets/team/miguel.jpg';
+import juanjo from '../../assets/team/juanjo.jpg';
 
 const IdPage = () => {
     const [additionalElements, setAdditionalElements] = useState([
@@ -15,9 +17,24 @@ const IdPage = () => {
             showMore: false,
             image: lourdes,
         },
+        {
+            id: 4,
+            name: 'Miguel Ángel Martínez Hernández',
+            profession: 'Ingeniero en Telecomunicaciones',
+            text: 'Miguel Angel Martinez-Hernandez, Ingeniero en Telecomunicaciones de la Universidad Autónoma de San Luis Potosí, es especialista en desarrollo web y Líder de Software en el Youth Innovation Laboratory (You-i Lab).',
+            showMore: false,
+            image: miguel,
+        },
+        {
+            id: 5,
+            name: 'Juan José Domínguez Pérez',
+            profession: 'Ingeniero en Sistemas Inteligentes',
+            text: 'Juan José Domínguez Pérez tiene el grado de Ingeniería de Sistemas Inteligentes por la Universidad Autónoma de San Luis Potosí. Es asociado de investigación y programador del You-i Lab del IPICYT.',
+            showMore: false,
+            image: juanjo,
+        },
         // Agrega aquí los otros 19 elementos con su respectivo texto e imagen
     ]);
-
     const handleToggleMore = (id) => {
         setAdditionalElements((prevElements) =>
             prevElements.map((element) => {
@@ -28,12 +45,11 @@ const IdPage = () => {
             })
         );
     };
-
     return (
-        <div className="flex flex-wrap">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Elemento principal */}
             <div className="w-full max-w-lg bg-white border mb-5">
-                <div className="flex items-start justify-between px-4 pt-10">
+                <div className="flex items-start justify-between px-4 sm:px-6 pt-10 mr-20">
                     <img className="w-32 h-32 mb-3 rounded-full shadow-lg" src={salvador} alt="Salvador Ruiz Correa" />
                     <div className="flex flex-col ml-4">
                         <h5 className="mb-1 text-2xl font-normal text-gray-500 dark:text-gray-400">Salvador Ruiz Correa</h5>
@@ -55,11 +71,10 @@ const IdPage = () => {
                     </div>
                 )}
             </div>
-
             {/* Elementos adicionales */}
             {additionalElements.slice(1).map((element, index) => (
-                <div key={element.id} className={`w-full max-w-lg bg-white border mb-5 ml-${index === 0 ? '4' : '0'}`}>
-                    <div className="flex items-start justify-between px-4 pt-10 mb-5">
+                <div key={element.id} className="w-full max-w-lg bg-white border mb-5 sm:ml-4 lg:ml-0 ">
+                    <div className="flex items-start justify-between px-4 sm:px-6 pt-10 mb-5 mr-10">
                         <img className="w-32 h-32 mb-3 rounded-full shadow-lg" src={element.image || viridiana} alt={`${element.name} image`} />
                         <div className="flex flex-col ml-4">
                             <h5 className="mb-1 text-2xl font-normal text-gray-500 dark:text-gray-400">{element.name}</h5>
@@ -85,5 +100,6 @@ const IdPage = () => {
         </div>
     );
 };
+
 
 export default IdPage;
