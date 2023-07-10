@@ -10,10 +10,10 @@ const About = () => {
                 <title>About us | You-i Lab</title>
             </Helmet>
 
-            <div className="projects_search">
-                <div className="container-fluid p-14 bg-slate-500 w-full h-full">
-                    <h2 className="text-right text-5xl text-white nosotros mr-24">Nosotros</h2>
-                </div>
+            <div className="about">
+            <div className="container-fluid p-12 bg-slate-500 w-full h-full">
+                <h2 className='text-right text-5xl text-white nosotros mr-24'>Nosotros</h2>
+            </div>
             </div>
 
             <div className="lg:ml-40 ml-10 ">
