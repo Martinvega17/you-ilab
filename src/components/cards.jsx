@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 import dataDigital from './data';
 
@@ -40,6 +41,7 @@ const Cards = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    dots: false,
                 },
             },
         ],
@@ -59,7 +61,7 @@ const Cards = () => {
     return (
         <Slider {...settings}>
             {additionalElements.map((element) => (
-                <div key={element.id} className="w-full max-w-lg bg-white border mb-10 mt-2 mr-8">
+                <div key={element.id} className="w-64 h-56 bg-white border mb-10 mt-2 mr-4">
                     <div className="flex items-start justify-start px-4 pt-10 mb-5">
                         <img
                             className="w-32 h-32 mb-3 rounded-full shadow-lg"
@@ -80,8 +82,8 @@ const Cards = () => {
                                 >
                                     <i
                                         className={`fa ${element.showMore
-                                                ? 'fa-chevron-circle-up'
-                                                : 'fa-chevron-circle-down'
+                                            ? 'fa-chevron-circle-up'
+                                            : 'fa-chevron-circle-down'
                                             }`}
                                     />
                                     <span className="mr-1 ml-2">More</span>
