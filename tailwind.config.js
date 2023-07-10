@@ -1,13 +1,10 @@
-const plugin = require('tailwindcss/plugin');
-const animatecss = require('tailwindcss-animatecss');
-
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       fontFamily: {
         sans: ["Roboto", "Rajdhani"],
-        cera: ["Cera-Medium", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
       },
       colors: {
         'azul-claro': '#d1e1f4',
@@ -21,4 +18,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}

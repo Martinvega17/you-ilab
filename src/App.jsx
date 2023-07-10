@@ -14,7 +14,7 @@ import './index.css';
 import './menu.css';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+ /*  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -24,7 +24,7 @@ function App() {
     return () => {
       clearTimeout(timeout);
     };
-  }, []);
+  }, []); */
 
   return (
     <Router>
@@ -33,7 +33,7 @@ function App() {
           <title>You-i Lab | Youth Innovation Laboratory</title>
         </Helmet>
         
-        {loading ? (
+        {/* {loading ? (
           <div id="preloader" className="flex items-center justify-center h-screen">
             <div className="ctn-preloader">
               <div className="animation-preloader">
@@ -63,8 +63,8 @@ function App() {
             </div>
           </div>
         ) : (
-          <>
-         <Menu />
+          <> */}
+            <Menu />
             <Nav />
             <div className="content">
               <Routes>
@@ -77,8 +77,8 @@ function App() {
             </div>
             
             <Footer />
-          </>
-        )}
+       {/*    </>
+        )} */}
       </div>
     </Router>
   );
