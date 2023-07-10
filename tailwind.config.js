@@ -15,7 +15,8 @@ module.exports = {
         'azul-dark': '#03045e',
         'azul-footer': '#114d97',
         'div-azul': '#1E6091',
-        'dark': '#111111'
+        'dark': '#111111',
+        'dark-blue': '#101B2F',
       },
     },
   },

@@ -38,7 +38,7 @@ function App() {
             <div className="ctn-preloader">
               <div className="animation-preloader">
                 <div className="spinner"></div>
-                <div className="txt-loading text-gray-600 text-center" style={{ fontSize: '40px' }}>
+                <div className="txt-loading text-gray-600 text-center" >
                   <span>YOUTH</span><br />
                   <span>INNOVATION</span><br />
                   <span>LABORATORY</span>
