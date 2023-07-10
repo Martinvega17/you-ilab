@@ -8,8 +8,7 @@ import About from './components/pages/about';
 import Projects from './components/pages/projects';
 import Publications from './components/pages/publications';
 import Contact from './components/pages/contact';
-
-
+import Menu from './components/menu';
 
 import './index.css';
 import './menu.css';
@@ -33,6 +32,7 @@ function App() {
         <Helmet>
           <title>You-i Lab | Youth Innovation Laboratory</title>
         </Helmet>
+        
         {loading ? (
           <div id="preloader" className="flex items-center justify-center h-screen">
             <div className="ctn-preloader">
@@ -64,7 +64,7 @@ function App() {
           </div>
         ) : (
           <>
-         
+         <Menu />
             <Nav />
             <div className="content">
               <Routes>
