@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 
 const Publications = () => {
     return (
-        <div className='ml-5'>
+        <div classNameName='ml-5'>
             <Helmet>
                 <title>Publications | You-i Lab</title>
             </Helmet>

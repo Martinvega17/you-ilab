@@ -5,7 +5,7 @@ import AliadosCarousel from '../aliados';
 
 const Home = () => {
     return (
-        <div className='ml-5'>
+        <div classNameName='ml-5'>
             <Helmet>
                 <title>Home | You-i Lab</title>
             </Helmet>
