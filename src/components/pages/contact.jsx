@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   return (
-    <div className="flex">
+    <div className="flex mt-32">
       <div className="w-1/2 mr-5 ml-5">
 
         {/* Insertamos el mapa */}
