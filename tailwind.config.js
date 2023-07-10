@@ -1,5 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+const plugin = require('tailwindcss/plugin');
+const animatecss = require('tailwindcss-animatecss');
+
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
@@ -18,4 +20,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

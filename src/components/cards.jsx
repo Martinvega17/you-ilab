@@ -59,39 +59,39 @@ const Cards = () => {
     return (
         <Slider {...settings}>
             {additionalElements.map((element) => (
-                <div key={element.id} classNameName="w-full max-w-lg bg-white border mb-10 mt-2 mr-8">
-                    <div classNameName="flex items-start justify-start px-4 pt-10 mb-5">
+                <div key={element.id} className="w-full max-w-lg bg-white border mb-10 mt-2 mr-8">
+                    <div className="flex items-start justify-start px-4 pt-10 mb-5">
                         <img
-                            classNameName="w-32 h-32 mb-3 rounded-full shadow-lg"
+                            className="w-32 h-32 mb-3 rounded-full shadow-lg"
                             src={element.image || 'viridiana'}
                             alt={`${element.name} image`}
                         />
-                        <div classNameName="flex flex-col ml-4">
-                            <h5 classNameName="mb-1 text-2xl font-normal text-gray-500 dark:text-gray-400 self-start">
+                        <div className="flex flex-col ml-4">
+                            <h5 className="mb-1 text-2xl font-normal text-gray-500 dark:text-gray-400 self-start">
                                 {element.name}
                             </h5>
-                            <span classNameName="text-lg text-gray-500 dark:text-gray-400 self-start h-full">
+                            <span className="text-lg text-gray-500 dark:text-gray-400 self-start h-full">
                                 {element.profession}
                             </span>
-                            <div classNameName="flex justify-start">
+                            <div className="flex justify-start">
                                 <button
-                                    classNameName="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-2"
+                                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-2"
                                     onClick={() => handleToggleMore(element.id)}
                                 >
                                     <i
-                                        classNameName={`fa ${element.showMore
+                                        className={`fa ${element.showMore
                                                 ? 'fa-chevron-circle-up'
                                                 : 'fa-chevron-circle-down'
                                             }`}
                                     />
-                                    <span classNameName="mr-1 ml-2">More</span>
+                                    <span className="mr-1 ml-2">More</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                     {element.showMore && (
-                        <div classNameName="p-4 bg-gray-100 dark:bg-gray-800 rounded mt-5">
-                            <p classNameName="text-gray-700 dark:text-gray-300">{element.text}</p>
+                        <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded mt-5">
+                            <p className="text-gray-700 dark:text-gray-300">{element.text}</p>
                         </div>
                     )}
                 </div>

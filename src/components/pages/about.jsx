@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import team from '../../assets/team.jpg';
-import IdPage from './id';
+import Card from '../cards';
+
 
 const About = () => {
 
@@ -68,7 +69,7 @@ const About = () => {
                             </div>
                         </div>
                         {/* cards */}
-                        <IdPage />
+                        <Card />
 
                     </div>
                 </div>

@@ -91,12 +91,12 @@ const Carrusel = () => {
 
  return (
     <div>
-      <h2 classNameName='text-center mt-10'>Proyectos</h2>
+      <h2 className='text-center mt-10'>Proyectos</h2>
       <Slider {...settings} responsive={responsiveSettings}>
         {images.map((image) => (
           <div key={image.id}>
             <a href={image.url} target="_blank" rel="noopener noreferrer">
-              <img src={image.src} alt={image.alt} classNameName='carrusel-images'  />
+              <img src={image.src} alt={image.alt} className='carrusel-images'  />
             </a>
           </div>
         ))}

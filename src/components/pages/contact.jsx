@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   return (
-    <div classNameName="flex">
-      <div classNameName="w-1/2 mr-5 ml-5">
+    <div className="flex">
+      <div className="w-1/2 mr-5 ml-5">
 
         {/* Insertamos el mapa */}
 
@@ -14,34 +14,34 @@ const Contact = () => {
         </Helmet>
 
       </div>
-      <div classNameName="w-1/2 mr-5">
+      <div className="w-1/2 mr-5">
 
-        <h1 classNameName="text-center">Contactanos</h1>
+        <h1 className="text-center">Contactanos</h1>
         <form action="enviar.php" method="POST">
-          <legend classNameName='mb-5 text-lg font-bold'>Envia un mensaje</legend>
-          <div classNameName="mb-4">
+          <legend className='mb-5 text-lg font-bold'>Envia un mensaje</legend>
+          <div className="mb-4">
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" classNameName="w-full border border-gray-300 rounded px-3 py-2" placeholder='Jane Doe' required />
+            <input type="text" name="name" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='Jane Doe' required />
           </div>
-          <div classNameName="mb-4">
+          <div className="mb-4">
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" classNameName="w-full border border-gray-300 rounded px-3 py-2" placeholder='example@company.com' required />
+            <input type="email" name="email" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='example@company.com' required />
           </div>
-          <div classNameName="mb-4">
+          <div className="mb-4">
             <label htmlFor="phone">Phone</label>
-            <input type="tel" name="phone" classNameName="w-full border border-gray-300 rounded px-3 py-2" placeholder='16825789' />
+            <input type="tel" name="phone" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='16825789' />
           </div>
-          <div classNameName="mb-4">
+          <div className="mb-4">
             <label htmlFor="">Company</label>
-            <input type="text" classNameName="w-full border border-gray-300 rounded px-3 py-2" placeholder='Company'/>
+            <input type="text" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='Company'/>
           </div>
-          <div classNameName="mb-4">
+          <div className="mb-4">
             <label htmlFor="">Message</label>
-            <textarea classNameName="w-full border border-gray-300 rounded px-3 py-2" rows="6" placeholder='Write your message'></textarea>
+            <textarea className="w-full border border-gray-300 rounded px-3 py-2" rows="6" placeholder='Write your message'></textarea>
           </div>
-          <div classNameName="text-center mb-10">
+          <div className="text-center mb-10">
             <input type="submit" value="Submit"
-              classNameName="bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 cursor-pointer mx-auto w-150 text-lg" />
+              className="bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 cursor-pointer mx-auto w-150 text-lg" />
           </div>
         </form>
       </div>

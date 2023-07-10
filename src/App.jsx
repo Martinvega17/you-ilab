@@ -1,6 +1,4 @@
-/* The code you provided is a React component called `App`. It is the main component of your
-application and serves as the entry point for rendering your application. */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Nav from './components/Nav';
 import Footer from './components/footer';
@@ -11,31 +9,76 @@ import Projects from './components/pages/projects';
 import Publications from './components/pages/publications';
 import Contact from './components/pages/contact';
 
-import Menu from './components/menu';
+
+
 import './index.css';
 import './menu.css';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 700);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
   return (
     <Router>
       <div className="App">
         <Helmet>
           <title>You-i Lab | Youth Innovation Laboratory</title>
         </Helmet>
-        <Nav />
-        <Menu />
-        
-        <div className="content">
-          <Routes>
-            <Route path="/you-ilab/" element={<Home />} />
-            <Route path="/you-ilab/about" element={<About />} />
-            <Route path="/you-ilab/projects" element={<Projects />} />
-            <Route path="/you-ilab/publications" element={<Publications />} />
-            <Route path="/you-ilab/contact" element={<Contact />} />
-          </Routes>
-
-        </div>
-        <Footer />
+        {loading ? (
+          <div id="preloader" className="flex items-center justify-center h-screen">
+            <div className="ctn-preloader">
+              <div className="animation-preloader">
+                <div className="spinner"></div>
+                <div className="txt-loading text-gray-600 text-center" style={{ fontSize: '40px' }}>
+                  <span>YOUTH</span><br />
+                  <span>INNOVATION</span><br />
+                  <span>LABORATORY</span>
+                </div>
+              </div>
+              <div className="loader">
+                <div className="row">
+                  <div className="col-3 loader-section section-left">
+                    <div className="bg"></div>
+                  </div>
+                  <div className="col-3 loader-section section-left">
+                    <div className="bg"></div>
+                  </div>
+                  <div className="col-3 loader-section section-right">
+                    <div className="bg"></div>
+                  </div>
+                  <div className="col-3 loader-section section-right">
+                    <div className="bg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <>
+         
+            <Nav />
+            <div className="content">
+              <Routes>
+                <Route path="/you-ilab/" element={<Home />} />
+                <Route path="/you-ilab/about" element={<About />} />
+                <Route path="/you-ilab/projects" element={<Projects />} />
+                <Route path="/you-ilab/publications" element={<Publications />} />
+                <Route path="/you-ilab/contact" element={<Contact />} />
+              </Routes>
+            </div>
+            
+            <Footer />
+          </>
+        )}
       </div>
     </Router>
   );
