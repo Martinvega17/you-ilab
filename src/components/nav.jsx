@@ -69,10 +69,10 @@ const Nav = () => {
                     </li>
                 </ul>
             </div>
-            <div className="container mx-auto px-4 py-0 lg:py-0">
-                <div className="flex items-center justify-between">
-                    <Link to="/" className="flex items-center">
-                    <img className="text-white text-lg font-semibold h-20  w-full ml-1" src={logo_you_i_lab} alt="Logo" />
+            <div className="container mx-auto px-4 py-0 lg:py-2">
+            <div className="absolute top-0 left-6 flex items-start justify-start hidden lg:flex mt-0 mr-0 ">
+                    <Link to="/" className="contents">
+                    <img className="text-white text-lg font-semibold h-20 w-full ml-2" src={logo_you_i_lab} alt="Logo" />
                     </Link>
                     <div className="md:hidden">
                         <button
