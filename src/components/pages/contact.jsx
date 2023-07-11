@@ -1,52 +1,57 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import '../../contact.css';
 
 const Contact = () => {
   return (
-    <div className="flex mt-32">
-      <div className="w-1/2 mr-5 ml-5">
-
-        {/* Insertamos el mapa */}
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.3774529350726!2d-101.03833502503684!3d22.149699779795128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98c8d0777cff%3A0x8ed9d9a98ee5ca91!2sInstituto%20Potosino%20de%20Investigaci%C3%B3n%20Cient%C3%ADfica%20y%20Tecnol%C3%B3gica!5e0!3m2!1sen!2smx!4v1689006856094!5m2!1sen!2smx" width="730" height="660"></iframe>
-        <Helmet>
-          <title>Contact | You-i Lab</title>
-        </Helmet>
-
-      </div>
-      <div className="w-1/2 mr-5">
-
-        <h1 className="text-center">Contactanos</h1>
-        <form action="enviar.php" method="POST">
-          <legend className='mb-5 text-lg font-bold'>Envia un mensaje</legend>
-          <div className="mb-4">
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='Jane Doe' required />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='example@company.com' required />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="phone">Phone</label>
-            <input type="tel" name="phone" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='16825789' />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="">Company</label>
-            <input type="text" className="w-full border border-gray-300 rounded px-3 py-2" placeholder='Company'/>
-          </div>
-          <div className="mb-4">
-            <label htmlFor="">Message</label>
-            <textarea className="w-full border border-gray-300 rounded px-3 py-2" rows="6" placeholder='Write your message'></textarea>
-          </div>
-          <div className="text-center mb-10">
-            <input type="submit" value="Submit"
-              className="bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 cursor-pointer mx-auto w-150 text-lg" />
-          </div>
-        </form>
+    <div className="contact-container mb-5">
+      <h1 className="logo c1">Contact <span>Us</span></h1>
+      <div className="contact-wrapper animated bounceInUp">
+        <div className="contact-form">
+          <h3 className="c3">Contact us</h3>
+          <form action="">
+            <div className="grid-2-cols">
+              <p>
+                <label>FullName</label>
+                <input type="text" name="fullname" />
+              </p>
+              <p>
+                <label>Email Adress</label>
+                <input type="email" name="email" />
+              </p>
+            </div>
+            <div className="grid-2-cols">
+              <p>
+                <label>Phone Number</label>
+                <input type="tel" name="phone" />
+              </p>
+              <p>
+                <label>Company</label>
+                <input type="text" name="affair" />
+              </p>
+            </div>
+            <p className="block">
+              <label>Message</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+            <p className="block">
+              <button>Send</button>
+            </p>
+          </form>
+        </div>
+        <div className="contact-info">
+          <h4 className="c4">More Info</h4>
+          <ul>
+            <li><i className="fas fa-map-marker-alt"></i> Baker Street</li>
+            <li><i className="fas fa-phone"></i> (111) 111 111 111</li>
+            <li><i className="fas fa-envelope-open-text"></i> contact@website.com</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+          <p>Company.com</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3695.3774471537113!2d-101.03576!3d22.1497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98c8d0777cff%3A0x8ed9d9a98ee5ca91!2sInstituto%20Potosino%20de%20Investigaci%C3%B3n%20Cient%C3%ADfica%20y%20Tecnol%C3%B3gica!5e0!3m2!1sen!2smx!4v1689109636400!5m2!1sen!2smx" width="500" height="250"></iframe>
+        </div>
       </div>
     </div>
   );
-};
+}
 
 export default Contact;
