@@ -1,3 +1,6 @@
+/* Estilos generales */
+
+/* Estilos del contenedor del menú */
 .menu-container {
     margin: 0;
     padding: 0;
@@ -5,10 +8,7 @@
     color: #ffffffcc;
 }
 
-.menu-container {
-    position: relative;
-}
-
+/* Estilos del botón de menú */
 .menu-button {
     display: block;
     width: 50px;
@@ -24,6 +24,7 @@
     z-index: 9999;
 }
 
+/* Estilos del icono del botón de menú */
 .menu-button:before,
 .menu-button:after {
     content: "";
@@ -31,7 +32,6 @@
     width: 30px;
     height: 3px;
     background-color: #424241;
-    ;
     position: absolute;
     left: 10px;
     transition: transform 0.3s ease;
@@ -45,6 +45,7 @@
     top: 27px;
 }
 
+/* Estilos del botón de menú cuando está abierto */
 .menu-button.open:before {
     transform: translateY(14px) rotate(45deg);
 }
@@ -53,6 +54,7 @@
     transform: translateY(-14px) rotate(-45deg);
 }
 
+/* Estilos del menú */
 .menu {
     list-style-type: none;
     margin: 0;
@@ -70,16 +72,19 @@
     justify-content: center;
 }
 
+/* Estilos del menú cuando está abierto */
 .menu.open {
     transform: translateX(0);
 }
 
+/* Estilos de los elementos de la lista de menú */
 .menu li {
     margin-top: 30px;
     text-align: center;
     position: relative;
 }
 
+/* Estilos de los enlaces del menú */
 .menu li a {
     color: #b4b4b4;
     font-size: 24px;
@@ -88,10 +93,12 @@
     text-transform: uppercase;
 }
 
+/* Estilos de los enlaces del menú al pasar el cursor */
 .menu li a:hover {
     color: #c70239;
 }
 
+/* Estilos del texto del menú */
 .menu-text {
     position: fixed;
     display: flex;
@@ -115,20 +122,19 @@
     transition-timing-function: ease-in-out;
 }
 
+/* Estilos del elemento de la lista del menú al pasar el cursor */
 .menu li:hover {
     color: #fff;
 }
 
+/* Estilos del texto del menú al pasar el cursor */
 .menu li:hover .menu-text {
     opacity: 1;
     letter-spacing: 1px;
 }
 
-.no-reverse {
-    transition-timing-function: ease-out;
-}
-
-@media screen and (max-width:600px) {
+/* Estilos específicos para dispositivos móviles con pantalla de hasta 600px */
+@media screen and (max-width: 600px) {
     .menu-text {
         font-size: 50px;
     }
