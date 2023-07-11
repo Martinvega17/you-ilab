@@ -10,7 +10,7 @@ const Nav = () => {
     return (
         <nav className="relative bg-azul-claro">
             <div className="relative top-full left-0 right-0 bg-white bg-transparent md:relative md:flex md:items-center md:justify-center md:py-4 sm:py-7 py-7 md:space-x-8">
-                <ul className="md:flex">
+                <ul className="md:flex justify-center text-center">
                     <li className="nav-item mr-8">
                         <NavLink
                             to="/you-ilab/"
@@ -68,7 +68,7 @@ const Nav = () => {
             <div className="container mx-auto px-4 py-0 md:py-0">
                 <div className="absolute top-0 right-0 flex items-end justify-end mt-0 mr-0">
                     <div className="contents">
-                        <img src={logo_cns} alt="logo cns" className="h-20 ml-2" id='cns' />
+                        <img src={logo_cns} alt="logo cns" className="h-20 ml-2 md:block hidden" id='cns' />
                         <img src={logo_ipicyt} alt="logo ipicyt" className="h-20 absolute left-0" id='logo-ipicyt' style={{ marginLeft: "-110px" }} />
                     </div>
                 </div>
