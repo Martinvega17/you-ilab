@@ -11,20 +11,21 @@ import Contact from './components/pages/contact';
 
 
 import './index.css';
+import './contact.css';
 
 
 function App() {
- /*  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 700);
-
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, []); */
+  /*  const [loading, setLoading] = useState(true);
+ 
+   useEffect(() => {
+     const timeout = setTimeout(() => {
+       setLoading(false);
+     }, 700);
+ 
+     return () => {
+       clearTimeout(timeout);
+     };
+   }, []); */
 
   return (
     <Router>
@@ -32,9 +33,9 @@ function App() {
         <Helmet>
           <title>You-i Lab | Youth Innovation Laboratory</title>
         </Helmet>
-            <Nav />
-            
-        
+        <Nav />
+
+
         {/* {loading ? (
           <div id="preloader" className="flex items-center justify-center h-screen">
             <div className="ctn-preloader">
@@ -66,19 +67,19 @@ function App() {
           </div>
         ) : (
           <> */}
-            
-            <div className="content">
-              <Routes>
-                <Route path="/you-ilab/" element={<Home />} />
-                <Route path="/you-ilab/about" element={<About />} />
-                <Route path="/you-ilab/projects" element={<Projects />} />
-                <Route path="/you-ilab/publications" element={<Publications />} />
-                <Route path="/you-ilab/contact" element={<Contact />} />
-              </Routes>
-            </div>
-            
-            <Footer />
-       {/*    </>
+
+        <div className="content">
+          <Routes>
+            <Route path="/you-ilab/" element={<Home />} />
+            <Route path="/you-ilab/about" element={<About />} />
+            <Route path="/you-ilab/projects" element={<Projects />} />
+            <Route path="/you-ilab/publications" element={<Publications />} />
+            <Route path="/you-ilab/contact" element={<Contact />} />
+          </Routes>
+        </div>
+
+        <Footer />
+        {/*    </>
         )} */}
       </div>
     </Router>
