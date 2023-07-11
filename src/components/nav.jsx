@@ -32,7 +32,7 @@ const Nav = () => {
         <nav className={`relative bg-azul-claro ${isMenuOpen ? 'bg-white' : ''}`}>
             <div className="mx-auto px-8 py-3 md:py-1">
                 <div className="flex items-center justify-center">
-                    <div className="mr-auto"> {/* Alineación a la izquierda */}
+                    <div className="mr-auto">
                         <Link to="/you-ilab/" className="contents">
                             <img
                                 className={`text-white text-lg font-semibold h-20 ${!isMenuOpen ? 'md:ml-0' : ''}`}
@@ -50,9 +50,9 @@ const Nav = () => {
                             </button>
                         </div>
                     ) : (
-                        <div className="hidden md:flex items-center justify-center flex-grow"> {/* Modificación aquí */}
-                            <ul className="flex justify-center text-right"> {/* Modificación aquí */}
-                                <li className="nav-item ">
+                        <div className="hidden md:flex items-center justify-center flex-grow">
+                            <ul className="flex justify-center text-right"> {/* Agregado: space-x-8 */}
+                                <li className="nav-item mr-8">
                                     <NavLink
                                         to="/you-ilab/"
                                         className={({ isActive }) =>
@@ -63,7 +63,7 @@ const Nav = () => {
                                         Inicio
                                     </NavLink>
                                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item mr-8">
                                     <NavLink
                                         to="/you-ilab/about"
                                         className={({ isActive }) =>
@@ -74,7 +74,7 @@ const Nav = () => {
                                         Nosotros
                                     </NavLink>
                                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item mr-8">
                                     <NavLink
                                         to="/you-ilab/projects"
                                         className={({ isActive }) =>
