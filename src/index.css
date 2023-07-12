@@ -108,6 +108,14 @@ nav a:hover {
   cursor: pointer;
 }
 
+.pt-200 {
+  padding-top: 200px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
 .icon {
   color: #fff;
   transition: color 0.3s;
@@ -474,3 +482,25 @@ nav {
 }
 
 
+/*Estilos sponsor*/
+
+.sponser-area {
+  background: linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 214, 191, 255) 100%);
+  background-color: #02d3bf;
+}
+
+.align-items-start {
+  align-items: flex-start!important;
+}
+
+.singel-brand-item img {
+  width: auto !important;
+  max-height: 100px;
+  filter: grayscale(1);
+  transition: all .5s;
+}
+
+.singel-brand-item img:hover {
+	width: auto !important;
+	filter: grayscale(0);
+}
