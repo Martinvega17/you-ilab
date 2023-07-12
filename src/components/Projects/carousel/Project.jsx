@@ -9,7 +9,7 @@ const Project = (props) => {
             <div className="disc">
                 <h1 className='text-white description'>{desc}</h1>
                 <p className='text-white demo'>{disc}
-                    <a href={src} target='_blanck'> demo</a>
+                    <a href={src} target='_blanck'> Ver mas</a>
                 </p>
             </div>
         </Container>

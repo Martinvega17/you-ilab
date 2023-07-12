@@ -108,14 +108,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-.pt-200 {
-  padding-top: 200px;
-}
-
-.pb-100 {
-  padding-bottom: 100px;
-}
-
 .icon {
   color: #fff;
   transition: color 0.3s;
@@ -503,4 +495,12 @@ nav {
 .singel-brand-item img:hover {
 	width: auto !important;
 	filter: grayscale(0);
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
 }
