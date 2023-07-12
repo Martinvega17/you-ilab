@@ -8,8 +8,8 @@ const Projects = () => {
   return (
     <Container id='project'>
         <Zoom>
-            <h1 className='text-white'>Recent <span className="green">Projects</span></h1>
-            <p className='text-white'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
+            <h1 className='text-white recent'>Recent <span className="green">Projects</span></h1>
+            <p className='text-white des'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque 
             voluptate excepturi porro sed totam quis animi dolorum rerum earum.</p>
         </Zoom>
         <Slide>
@@ -31,11 +31,11 @@ const Container = styled.div`
     @media(max-width: 840px){
         width: 90%;
     }
-    h1{
-        font-size: 1.9rem;
+    .recent{
+        font-size: 3.6rem;
     }
 
-    p{
+    .des{
         width: 28rem;
         margin: 0 auto;
         padding: 1rem 0;
