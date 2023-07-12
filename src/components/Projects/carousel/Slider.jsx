@@ -6,31 +6,83 @@ import styled from 'styled-components';
 
 let data = [
     {
-        desc : "CDS",
+        desc : "Centinela del Aire",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
         disc : "Aplicación que brinda una autoevaluación inmediata sobre la enfermedad del COVID-19.",
         src : "https://www.google.com/"
     },
     {
-        desc : "CDS",
+        desc : "WeNet Mexico",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        disc : "WeNet está financiado por el programa H2020 de la UE y cuenta con el apoyo de investigadores de varios países. IPICYT representa a México al albergar WeNet MX.",
+        src : "https://www.google.com/"
     },
     {
-        desc : "CDS",
+        desc : "Centinela de la Salud",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        src : "https://www.google.com/"
     },
     {
-        desc : "CDS",
+        desc : "C-SEF",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        src : "https://www.google.com/"
     },
     {
-        desc : "CDS",
+        desc : "Muframex",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    }
+        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        src : "https://www.google.com/"
+    },
+    {
+        desc : "Horizonte Saludable",
+        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        src : "https://www.google.com/"
+    },
+    {
+        desc : "Juventud al Dia",
+        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        src : "https://www.google.com/"
+    },
+    {
+      desc : "Coincidencia Digital",
+      img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      src : "https://www.google.com/"
+    },
+    {
+      desc : "Urbis",
+      img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      src : "https://www.google.com/"
+    },
+    {
+      desc : "SieNi - PCWO",
+      img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      src : "https://www.google.com/"
+    },
+    {
+      desc : "Beyond the Street",
+      img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      src : "https://www.google.com/"
+    },
+    {
+      desc : "Mi Casa es su Casa",
+      img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      src : "https://www.google.com/"
+    },
+    {
+      desc : "Environmental Restoration Perception",
+      img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
+      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      src : "https://www.google.com/"
+    },
 ];
 
 var settings = {
