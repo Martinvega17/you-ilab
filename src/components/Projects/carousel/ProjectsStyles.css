@@ -83,7 +83,7 @@
   
 }
 
-:hover > img{
+:hover > .img{
   transform: scale(1.3);
 }
 

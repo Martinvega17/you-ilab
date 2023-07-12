@@ -20,67 +20,67 @@ let data = [
     {
         desc : "Centinela de la Salud",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        disc : "Es una plataforma móvil de salud financiada por el You-i Lab y el Consejo Potosino de Investigación. Su objetivo es proporcionar vigilancia epidemiológica sindrómica para virus transmitidos por el aire o vectores.",
         src : "https://www.google.com/"
     },
     {
         desc : "C-SEF",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        disc : "Es un proyecto que busca desarrollar un protocolo automatizado para el uso seguro y eficiente de instalaciones educativas durante COVID-19.",
         src : "https://www.google.com/"
     },
     {
         desc : "Muframex",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        disc : "El taller busca reunir investigadores multidisciplinarios para discutir el uso de plataformas IoT en la calidad del aire interior y su impacto en la salud humana",
         src : "https://www.google.com/"
     },
     {
         desc : "Horizonte Saludable",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        disc : "busca crear un marco para que los ciudadanos monitoreen y aborden problemas ambientales en comunidades urbanas mexicanas.",
         src : "https://www.google.com/"
     },
     {
         desc : "Juventud al Dia",
         img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+        disc : "Promover y fortalecer las habilidades tecnológicas en IA de estudiantes de educación media superior en San Luis Potosí",
         src : "https://www.google.com/"
     },
     {
       desc : "Coincidencia Digital",
       img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      disc : "Este proyecto busca estudiar los patrones de uso de las TIC entre jóvenes en la CDMX para informar políticas públicas y reducir la desigualdad social.",
       src : "https://www.google.com/"
     },
     {
       desc : "Urbis",
       img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      disc : "UrBis es una plataforma de crowdsourcing desarrollada en el You-i Lab del IPICYT para abordar problemas socio-urbanos en México.",
       src : "https://www.google.com/"
     },
     {
       desc : "SieNi - PCWO",
       img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      disc : "El objetivo del proyecto liderado por el You-i Lab es desarrollar la plataforma CWO para delimitar cuencas hidrográficas y abordar problemáticas relacionadas con el agua.",
       src : "https://www.google.com/"
     },
     {
       desc : "Beyond the Street",
       img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      disc : "El objetivo es utilizar el crowdsourcing móvil para motivar a jóvenes marginados a documentar su entorno socio-urbano.",
       src : "https://www.google.com/"
     },
     {
       desc : "Mi Casa es su Casa",
       img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      disc : "El proyecto busca comprender el uso y percepción de los servicios de alojamiento compartido en países desarrollados y en desarrollo.",
       src : "https://www.google.com/"
     },
     {
       desc : "Environmental Restoration Perception",
       img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-      disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      disc : "Identificar entornos restaurativos en León, Guanajuato y evaluar su efecto en la restauración psicológica a través de evaluaciones móviles.",
       src : "https://www.google.com/"
     },
 ];
