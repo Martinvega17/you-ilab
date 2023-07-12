@@ -98,7 +98,7 @@ const AliadosCarousel = () => {
     ];
 
     return (
-        <div className='mb-16'>
+        <div className='mb-16 ml-2'>
             <h2 className='text-center text-aliados mb-10 mt-12'>Aliados</h2>
             <Slider {...settings}>
                 {images.map((image) => (
