@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Projects from '/xampp/htdocs/you-ilab/src/components/Projects/Projects';
+import Projects from '../Projects/carousel/Projects';
 import AliadosCarousel from '../aliados';
 
 
