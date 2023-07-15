@@ -8,14 +8,14 @@ import DBM from '../../assets/sponsors/DBM_WHITE_LOGO.png'
 import IPICYT from '../../assets/sponsors/IPICYT.png'
 import GCIC from '../../assets/sponsors/GCIC.png'
 
-// Import LightColor from styled-components
+// Importar LightColor from styled-components
 const LightColor = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `;
 
 const Home = () => {
     return (
-        <div className='container-fluid'>
+        <div className="container-fluid">
             <Helmet>
                 <title>Home | You-i Lab</title>
             </Helmet>
@@ -23,11 +23,10 @@ const Home = () => {
                 <Projects />
             </LightColor>
             <AliadosCarousel />
-
             <div className="sponser-area pt-100 pb-100">
-                <div className="container text-center">
-                    <div className="flex justify-center">
-                        <div className="singel-brand-item ml-10">
+                <div className="container text-center mx-auto">
+                    <div className="flex justify-around">
+                        <div className="singel-brand-item">
                             <a href="" className="mr-3">
                                 <img src={YIL} alt="" className="w-24 h-auto" />
                             </a>
@@ -50,8 +49,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };

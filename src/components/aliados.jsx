@@ -18,9 +18,10 @@ const AliadosCarousel = () => {
     const settings = {
         dots: false,
         infinite: true,
+        arrows: false,
         speed: 500,
         slidesToShow: 6,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         initialSlide: 0,
         autoplay: true, // Reproducción automática
         autoplaySpeed: 3000, // Velocidad de reproducción automática (en milisegundos)
@@ -39,14 +40,17 @@ const AliadosCarousel = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    initialSlide: 2
+                    infinite: true,
+                    dots: true
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
                 }
             }
         ]
@@ -98,7 +102,7 @@ const AliadosCarousel = () => {
     ];
 
     return (
-        <div className='mb-16 ml-2'>
+        <div className='mb-16 ml-10 mr-0'>
             <h2 className='text-center text-aliados mb-10 mt-12'>Aliados</h2>
             <Slider {...settings}>
                 {images.map((image) => (
