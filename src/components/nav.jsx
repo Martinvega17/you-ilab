@@ -47,7 +47,7 @@ const Nav = () => {
                     {isMobile ? (
                         <div className="fixed top-0 right-0">
                             {/* Botón */}
-                            <button className="md:hidden text-black-800 font-bold text-4xl mr-2 mt-2" onClick={toggleMenu}>
+                            <button className="md:hidden text-black-800 font-black text-4xl mr-2 mt-2" onClick={toggleMenu}>
                                 {isMenuOpen ? <RiCloseLine /> : <RiMenuLine />}
                             </button>
                         </div>
@@ -108,11 +108,10 @@ const Nav = () => {
                     <div className="fixed inset-0 flex items-center justify-center">
 
                         <div className={`links ${isMenuOpen ? 'active' : ''}`}>
-                            <a onClick={toggleMenu} href="#h">Home</a>
-                            <a onClick={toggleMenu} href="#h">Shop</a>
-                            <a onClick={toggleMenu} href="#h">About</a>
-                            <a onClick={toggleMenu} href="#h">Contact</a>
-                            <a onClick={toggleMenu} href="#h">Blog</a>
+                            <a className="mb-12" onClick={toggleMenu} href="/you-ilab/">Home</a>
+                            <a className="mb-12" onClick={toggleMenu} href="/you-ilab/about">About</a>
+                            <a className="mb-12" onClick={toggleMenu} href="/you-ilab/projects">Projects</a>
+                            <a className="mb-12" onClick={toggleMenu} href="/you-ilab/contact">Contact</a>
                         </div>
                         <div className='burguer'>
                             <BurguerButton clicked={isMenuOpen} handleClick={toggleMenu} />
@@ -143,13 +142,6 @@ const Nav = () => {
 export default Nav;
 
 const NavContainer = styled.nav`
-  h2{
-    color: white;
-    font-weight: 400;
-    span{
-      font-weight: bold;
-    }
-  }
   padding: .4rem;
   background-color: #333;
   display: flex;
@@ -213,11 +205,15 @@ const NavContainer = styled.nav`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    z-index: 0; /* Asegúrate de que el z-index sea menor que el de NavContainer */
+
   }
   
   
   .content-container {
     flex-grow: 1;
+    z-index: 1; /* Asegúrate de que el z-index sea mayor que el de NavContainer */
+
   }
   
 `
@@ -229,8 +225,9 @@ const BgDiv = styled.div`
   left: -1000px;
   width: 100%;
   height: 100%;
-  z-index: -1;
   transition: all .6s ease ;
+  z-index: -1; /* Asegúrate de que el z-index sea menor que el de NavContainer */
+
   
   &.active{
     border-radius: 0 0 80% 0;
