@@ -4,6 +4,8 @@ import { RiMenuLine, RiCloseLine } from 'react-icons/ri'; // Importar los iconos
 import logo_you_i_lab from '../assets/logos/logo-you-i_lab.png';
 import logo_cns from '../assets/logos/logo-cns.png';
 import logo_ipicyt from '../assets/logos/logo-ipicyt.png';
+import styled from 'styled-components';
+import BurguerButton from './BurguerButton';
 
 const Nav = () => {
     const location = useLocation();
@@ -29,7 +31,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <nav className={`relative bg-azul-claro ${isMenuOpen ? 'bg-white' : ''}`}>
+        <nav className={`relative bg-azul-claro ${isMenuOpen ? 'bg-azul-claro' : ''}`}>
             <div className="mx-auto px-8 py-3 md:py-1">
                 <div className="flex items-center justify-center">
                     <div className="mr-auto">
@@ -43,15 +45,15 @@ const Nav = () => {
                         </Link>
                     </div>
                     {isMobile ? (
-                        <div>
+                        <div className="fixed top-0 right-0">
                             {/* Botón */}
-                            <button className="md:hidden ml-2 text-blue-800 font-bold text-2xl" onClick={toggleMenu}>
+                            <button className="md:hidden text-black-800 font-bold text-4xl mr-2 mt-2" onClick={toggleMenu}>
                                 {isMenuOpen ? <RiCloseLine /> : <RiMenuLine />}
                             </button>
                         </div>
                     ) : (
                         <div className="hidden md:flex items-center justify-center flex-grow">
-                            <ul className="flex justify-center text-right"> {/* Agregado: space-x-8 */}
+                            <ul className="flex justify-center text-right">
                                 <li className="nav-item mr-8">
                                     <NavLink
                                         to="/you-ilab/"
@@ -102,58 +104,22 @@ const Nav = () => {
                 </div>
             </div>
             {isMenuOpen && isMobile && (
-                <div className="bg-white py-4 md:py-0 absolute top-16 left-0 right-0 md:relative md:flex md:items-center md:justify-center md:space-x-8">
-                    <ul className="md:flex justify-center text-center">
-                        <li className="nav-item mr-8">
-                            <NavLink
-                                to="/you-ilab/"
-                                className={({ isActive }) =>
-                                    isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
-                                }
-                                activeClassName="active"
-                                onClick={toggleMenu}
-                            >
-                                Inicio
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-8">
-                            <NavLink
-                                to="/you-ilab/about"
-                                className={({ isActive }) =>
-                                    isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
-                                }
-                                activeClassName="active"
-                                onClick={toggleMenu}
-                            >
-                                Nosotros
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-8">
-                            <NavLink
-                                to="/you-ilab/projects"
-                                className={({ isActive }) =>
-                                    isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
-                                }
-                                activeClassName="active"
-                                onClick={toggleMenu}
-                            >
-                                Proyectos
-                            </NavLink>
-                        </li>
-                        <li className="nav-item mr-5">
-                            <NavLink
-                                to="/you-ilab/contact"
-                                className={({ isActive }) =>
-                                    isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
-                                }
-                                activeClassName="active"
-                                onClick={toggleMenu}
-                            >
-                                Contacto
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
+                <NavContainer>
+                    <div className="fixed inset-0 flex items-center justify-center">
+
+                        <div className={`links ${isMenuOpen ? 'active' : ''}`}>
+                            <a onClick={toggleMenu} href="#h">Home</a>
+                            <a onClick={toggleMenu} href="#h">Shop</a>
+                            <a onClick={toggleMenu} href="#h">About</a>
+                            <a onClick={toggleMenu} href="#h">Contact</a>
+                            <a onClick={toggleMenu} href="#h">Blog</a>
+                        </div>
+                        <div className='burguer'>
+                            <BurguerButton clicked={isMenuOpen} handleClick={toggleMenu} />
+                        </div>
+                        <BgDiv className={`initial ${isMenuOpen ? ' active' : ''}`}></BgDiv>
+                    </div>
+                </NavContainer>
             )}
             <div className="container mx-auto px-4 py-0 md:py-0">
                 <div className="absolute top-0 right-0 flex items-end justify-end mt-0 mr-0">
@@ -168,9 +134,110 @@ const Nav = () => {
                         />
                     </div>
                 </div>
+
             </div>
         </nav>
     );
 };
 
 export default Nav;
+
+const NavContainer = styled.nav`
+  h2{
+    color: white;
+    font-weight: 400;
+    span{
+      font-weight: bold;
+    }
+  }
+  padding: .4rem;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  .links{
+    position: absolute;
+    top: -700px;
+    left: -2000px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all .5s ease;
+    a{
+      color: white;
+      font-size: 2rem;
+      display: block;
+    }
+    @media(min-width: 768px){
+      position: initial;
+      margin: 0;
+      a{
+        font-size: 1rem;
+        color: white;
+        display: inline;
+      }
+      display: block;
+    }
+  }
+
+  .links.active{
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    a{
+      font-size: 2rem;
+      margin-top: 1rem;
+      color: white;
+    }
+  }
+
+  .burguer{
+    @media(min-width: 768px){
+      display: none;
+    }
+  }
+
+  .your-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  
+  .content-container {
+    flex-grow: 1;
+  }
+  
+`
+
+const BgDiv = styled.div`
+  background-color: #222;
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all .6s ease ;
+  
+  &.active{
+    border-radius: 0 0 80% 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`
+

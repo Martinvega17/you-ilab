@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Nav from './components/nav';
+import NavContainer from './components/nav';
 import Footer from './components/footer';
 import Home from './components/pages/home';
 import About from './components/pages/about';
@@ -17,16 +17,20 @@ function App() {
         <Helmet>
           <title>You-i Lab | Youth Innovation Laboratory</title>
         </Helmet>
-        <Nav />
-        <div className="content">
-          <Routes>
-            <Route path="/you-ilab/" element={<Home />} />
-            <Route path="/you-ilab/about" element={<About />} />
-            <Route path="/you-ilab/projects" element={<Projects />} />
-            <Route path="/you-ilab/contact" element={<Contact />} />
-          </Routes>
+
+        <NavContainer />
+
+        <div className="your-page-container">
+          <div className="content">
+            <Routes>
+              <Route path="/you-ilab/" element={<Home />} />
+              <Route path="/you-ilab/about" element={<About />} />
+              <Route path="/you-ilab/projects" element={<Projects />} />
+              <Route path="/you-ilab/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </Router>
   );

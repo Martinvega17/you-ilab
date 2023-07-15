@@ -56,24 +56,24 @@ const Footer = () => {
                             <div className="footer-widget opening-hour-widget">
                                 <h4 className="title-footer text-lg font-bold mb-5 ml-12">Redes</h4>
                                 <div className="social-links">
-                                    <span className="icon-wrapper rounded-full inline-grid border-white border">
+                                    <span className="icon-wrapper ">
                                         <a href="https://www.facebook.com/">
-                                            <FontAwesomeIcon icon={faFacebook} size="2x" className="icon p-2" />
+                                            <FontAwesomeIcon icon={faFacebook} size="2x" className="icon p-2 rounded-full inline-grid border-white border" />
                                         </a>
                                     </span>
-                                    <span className="icon-wrapper rounded-full inline-grid border-white border">
+                                    <span className="icon-wrapper">
                                         <a href="https://twitter.com/">
-                                            <FontAwesomeIcon icon={faTwitter} size="2x" className="icon p-2" />
+                                            <FontAwesomeIcon icon={faTwitter} size="2x" className="icon p-2 rounded-full inline-grid border-white border" />
                                         </a>
                                     </span>
-                                    <span className="icon-wrapper rounded-full inline-grid border-white border">
+                                    <span className="icon-wrapper">
                                         <a href="https://www.linkedin.com/">
-                                            <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon p-2" />
+                                            <FontAwesomeIcon icon={faLinkedin} size="2x" className="icon p-2 rounded-full inline-grid border-white border" />
                                         </a>
                                     </span>
-                                    <span className="icon-wrapper rounded-full inline-grid border-white border md:mt-3 ">
+                                    <span className="icon-wrapper">
                                         <a href="tel:+524448342000">
-                                            <FontAwesomeIcon icon={faPhone} size="2x" className="icon p-2" />
+                                            <FontAwesomeIcon icon={faPhone} size="2x" className="icon p-2 rounded-full inline-grid border-white border" />
                                         </a>
                                     </span>
                                 </div>
