@@ -15,7 +15,7 @@ const LightColor = styled.div`
 
 const Home = () => {
     return (
-        <div className='container'>
+        <div className='container-fluid'>
             <Helmet>
                 <title>Home | You-i Lab</title>
             </Helmet>
