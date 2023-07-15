@@ -37,7 +37,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="mt-5 mb-14 lg:text-left md:text-center lg:mr-52 sm:mr-0">
-                        <h3 className="text-lg font-bold mb-5 title-footer ml-12">CONTACTO</h3>
+                        <h3 className="text-lg font-bold mb-5 title-footer md:ml-20">CONTACTO</h3>
                         <p>
                             <FontAwesomeIcon icon={faRocket} />
                             <span className="ml-2">
@@ -54,7 +54,7 @@ const Footer = () => {
                         </p>
                         <div className="lg:text-left md:text-center">
                             <div className="footer-widget opening-hour-widget">
-                                <h4 className="title-footer text-lg font-bold mb-5 ml-12">Redes</h4>
+                                <h4 className="title-footer text-lg font-bold mb-5 md:ml-20">Redes</h4>
                                 <div className="social-links">
                                     <span className="icon-wrapper ">
                                         <a href="https://www.facebook.com/">

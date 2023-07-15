@@ -11,10 +11,18 @@ const About = () => {
             </Helmet>
 
             <div className="about">
-            <div className="container-fluid p-12 bg-slate-500 w-full h-full">
-                <h2 className='text-right text-5xl text-white nosotros mr-24'>Nosotros</h2>
+                <div
+                    className="container-fluid p-12 w-full h-full"
+                    style={{
+                        backgroundColor: '#02d3bf',
+                        background: 'linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 214, 191, 255) 100%)',
+                    }}
+                >
+                    <h2 className="text-right text-5xl text-white nosotros mr-24">Nosotros</h2>
+                </div>
             </div>
-            </div>
+
+
 
             <div className="lg:ml-40 ml-10 ">
                 <div className="row">
