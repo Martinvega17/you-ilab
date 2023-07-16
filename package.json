@@ -35,6 +35,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
+    "react-modal": "^3.16.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.14.0",
     "react-router-native": "^6.14.0",
@@ -42,6 +43,7 @@
     "slick-carousel": "^1.8.1",
     "sort-by": "^0.0.2",
     "styled-components": "^6.0.3",
+    "swiper": "^10.0.4",
     "tailwindcss-animatecss": "^3.0.4"
   },
   "devDependencies": {

@@ -23,9 +23,9 @@ const Home = () => {
                 <Projects />
             </LightColor>
             <AliadosCarousel />
-            <div className="sponser-area pt-8 pb-8 pt-28 pb-16 h-80">
+            <div className="sponser-area pt-24 pb-16 h-80">
                 <div className="container mx-auto text-center ">
-                    <div className="flex justify-center justify-around">
+                    <div className="flex justify-around">
                         <div className="flex mb-4 md:mb-0">
                             <div className="singel-brand-item mr-3 ml-4 ">
                                 <a href="">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import team from '../../assets/team.jpg';
-import Card from '../cards';
+import Card from '../SwiperCarousel';
 
 const About = () => {
     return (

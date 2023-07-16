@@ -11,6 +11,8 @@ import muframex from '../assets/projects/logo_muframex.png';
 import horizonte from '../assets/projects/logo_hsaludable.png';
 import juventud from '../assets/projects/logo_juventud.png';
 
+
+
 const Carrusel = () => {
   const settings = {
     dots: true,
