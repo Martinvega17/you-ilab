@@ -46,7 +46,10 @@ const Nav = () => {
                     </div>
                     {isMobile ? (
                         <div className="fixed top-0 right-0">
-                            <button className="md:hidden text-black-800 font-black text-4xl mr-2 mt-2" onClick={toggleMenu}>
+                            <button
+                                className="md:hidden text-black-800 font-black text-4xl mr-2 mt-2"
+                                onClick={toggleMenu}
+                            >
                                 {isMenuOpen ? <RiCloseLine /> : <RiMenuLine />}
                             </button>
                         </div>
@@ -57,7 +60,9 @@ const Nav = () => {
                                     <NavLink
                                         to="/you-ilab/"
                                         className={({ isActive }) =>
-                                            isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
+                                            isActive
+                                                ? 'text-red-500 font-bold text-lg underline'
+                                                : 'text-blue-800 font-bold text-lg'
                                         }
                                         activeClassName="active"
                                     >
@@ -68,7 +73,9 @@ const Nav = () => {
                                     <NavLink
                                         to="/you-ilab/about"
                                         className={({ isActive }) =>
-                                            isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
+                                            isActive
+                                                ? 'text-red-500 font-bold text-lg underline'
+                                                : 'text-blue-800 font-bold text-lg'
                                         }
                                         activeClassName="active"
                                     >
@@ -79,7 +86,9 @@ const Nav = () => {
                                     <NavLink
                                         to="/you-ilab/projects"
                                         className={({ isActive }) =>
-                                            isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
+                                            isActive
+                                                ? 'text-red-500 font-bold text-lg underline'
+                                                : 'text-blue-800 font-bold text-lg'
                                         }
                                         activeClassName="active"
                                     >
@@ -90,7 +99,9 @@ const Nav = () => {
                                     <NavLink
                                         to="/you-ilab/contact"
                                         className={({ isActive }) =>
-                                            isActive ? 'text-red-500 font-bold text-lg underline' : 'text-blue-800 font-bold text-lg'
+                                            isActive
+                                                ? 'text-red-500 font-bold text-lg underline'
+                                                : 'text-blue-800 font-bold text-lg'
                                         }
                                         activeClassName="active"
                                     >
@@ -122,7 +133,7 @@ const Nav = () => {
                         <div className="burguer">
                             <BurguerButton clicked={isMenuOpen} handleClick={toggleMenu} />
                         </div>
-                        <BgDiv className={`initial ${isMenuOpen ? ' active' : ''}`}></BgDiv>
+                        <BgDiv className={`initial ${isMenuOpen ? 'active' : ''}`}></BgDiv>
                     </div>
                 </NavContainer>
             )}
@@ -147,17 +158,17 @@ const Nav = () => {
 export default Nav;
 
 const NavContainer = styled.nav`
-  padding: .4rem;
+  padding: 0.4rem;
   background-color: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  a{
+  a {
     color: white;
     text-decoration: none;
     margin-right: 1rem;
   }
-  .links{
+  .links {
     position: absolute;
     top: -700px;
     left: -2000px;
@@ -165,16 +176,17 @@ const NavContainer = styled.nav`
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    transition: all .5s ease;
-    a{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    a {
       color: white;
       font-size: 2rem;
       display: block;
     }
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
       position: initial;
       margin: 0;
-      a{
+      a {
         font-size: 1rem;
         color: white;
         display: inline;
@@ -183,7 +195,7 @@ const NavContainer = styled.nav`
     }
   }
 
-  .links.active{
+  .links.active {
     width: 100%;
     display: block;
     position: absolute;
@@ -193,15 +205,17 @@ const NavContainer = styled.nav`
     left: 0;
     right: 0;
     text-align: center;
-    a{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    a {
       font-size: 2rem;
       margin-top: 1rem;
       color: white;
     }
   }
 
-  .burguer{
-    @media(min-width: 768px){
+  .burguer {
+    @media (min-width: 768px) {
       display: none;
     }
   }
@@ -211,17 +225,13 @@ const NavContainer = styled.nav`
     flex-direction: column;
     min-height: 100vh;
     z-index: 0; /* Asegúrate de que el z-index sea menor que el de NavContainer */
-
   }
-  
-  
+
   .content-container {
     flex-grow: 1;
     z-index: 1; /* Asegúrate de que el z-index sea mayor que el de NavContainer */
-
   }
-  
-`
+`;
 
 const BgDiv = styled.div`
   background-color: #222;
@@ -230,16 +240,16 @@ const BgDiv = styled.div`
   left: -1000px;
   width: 100%;
   height: 100%;
-  transition: all .6s ease ;
   z-index: -1; /* Asegúrate de que el z-index sea menor que el de NavContainer */
 
-  
-  &.active{
-    border-radius: 0 0 80% 0;
+  &.active {
+    border-radius: 0 0 0 50%;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    -webkit-clip-path: circle(150% at 100% -10%);
+    clip-path: circle(150% at 100% -10%);
+    transition: all 0.3s ease-out;
   }
-`
-
+`;

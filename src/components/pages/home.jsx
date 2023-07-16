@@ -23,40 +23,40 @@ const Home = () => {
                 <Projects />
             </LightColor>
             <AliadosCarousel />
-<div className="sponser-area pt-8 pb-8 md:pt-16 md:pb-16">
-  <div className="container mx-auto text-center">
-    <div className="flex flex-wrap md:flex-row flex-col justify-center md:justify-around">
-      <div className="flex mb-4 md:mb-0">
-        <div className="singel-brand-item mr-3 md:ml-4 ">
-          <a href="">
-            <img src={YIL} alt="" className="w-24 h-auto" />
-          </a>
-        </div>
-      </div>
-      <div className="flex mb-4 md:mb-0">
-        <div className="singel-brand-item mr-3 md:ml-4">
-          <a href="">
-            <img src={DBM} alt="" className="w-24 h-auto" />
-          </a>
-        </div>
-      </div>
-      <div className="flex mb-4 md:mb-0">
-        <div className="singel-brand-item mr-3 md:ml-4">
-          <a href="">
-            <img src={GCIC} alt="" className="w-24 h-auto" />
-          </a>
-        </div>
-      </div>
-      <div className="flex mb-4 md:mb-0">
-        <div className="singel-brand-item md:ml-4">
-          <a href="">
-            <img src={IPICYT} alt="" className="w-24 h-auto" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <div className="sponser-area pt-8 pb-8 md:pt-16 md:pb-16">
+                <div className="container mx-auto text-center">
+                    <div className="flex flex-wrap md:flex-row flex-col justify-center md:justify-around">
+                        <div className="flex mb-4 md:mb-0">
+                            <div className="singel-brand-item mr-3 md:ml-4 ">
+                                <a href="">
+                                    <img src={YIL} alt="" className="w-24 h-auto" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex mb-4 md:mb-0">
+                            <div className="singel-brand-item mr-3 md:ml-4">
+                                <a href="">
+                                    <img src={DBM} alt="" className="w-24 h-auto" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex mb-4 md:mb-0">
+                            <div className="singel-brand-item mr-3 md:ml-4">
+                                <a href="">
+                                    <img src={GCIC} alt="" className="w-24 h-auto" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex mb-4 md:mb-0">
+                            <div className="singel-brand-item md:ml-4">
+                                <a href="">
+                                    <img src={IPICYT} alt="" className="w-24 h-auto" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

@@ -18,6 +18,7 @@ const Cards = () => {
         initialSlide: 0,
         autoplay: true, // Reproducción automática
         autoplaySpeed: 3000, // Velocidad de reproducción automática (en milisegundos)
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -31,9 +32,8 @@ const Cards = () => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 2,
-                    initialSlide: 2,
                 },
             },
             {
