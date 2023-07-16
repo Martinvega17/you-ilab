@@ -39,6 +39,10 @@ const SwiperCarousel = () => {
             pagination: {
                 el: '.swiper-pagination',
             },
+            autoplay: {
+                delay: 3000, // Tiempo de espera entre cada transición (en milisegundos)
+                disableOnInteraction: false, // Permite la interacción del usuario con el swiper mientras se reproduce automáticamente
+              },
         });
 
         return () => {
