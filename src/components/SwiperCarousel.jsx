@@ -8,6 +8,8 @@ import dataDigital from '../components/data';
 import Modal from 'react-modal';
 import '../css/modal.css';
 
+Modal.setAppElement('#root');
+
 const SwiperCarousel = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [expandedCard, setExpandedCard] = useState(null);

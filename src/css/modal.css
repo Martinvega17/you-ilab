@@ -19,7 +19,6 @@
 9. Media queries para dispositivos con ancho máximo de 620px
 10. Media queries para dispositivos con ancho máximo de 768px
 11. Media queries para dispositivos con ancho máximo de 1400px
-12. Media queries para dispositivos con ancho máximo de 430px
 */
 
 /* Estilos generales del modal */
@@ -263,6 +262,7 @@
     max-height: 800px;
     font-size: 1.3rem;
     font-weight: 300;
-    margin: 5em 1em 0 ;
+    margin: 5em 1em 0 0;
+    padding-bottom: 7em;
   }
 }

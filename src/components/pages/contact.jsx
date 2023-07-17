@@ -39,7 +39,6 @@ const Contact = () => {
               <button>Send</button>
             </p>
           </form>
-         
         </div>
         <div className="contact-info">
           <h4 className="c4">More Info</h4>
@@ -51,7 +50,6 @@ const Contact = () => {
           </ul>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
           <p><a href="https://www.ipicyt.edu.mx/" className='text-white' target='_blanck'>ipicyt.edu.mx</a></p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3695.3774471537113!2d-101.03576!3d22.1497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98c8d0777cff%3A0x8ed9d9a98ee5ca91!2sInstituto%20Potosino%20de%20Investigaci%C3%B3n%20Cient%C3%ADfica%20y%20Tecnol%C3%B3gica!5e0!3m2!1sen!2smx!4v1689109636400!5m2!1sen!2smx" width="500" height="250"></iframe>
         </div>
       </div>
     </div>
