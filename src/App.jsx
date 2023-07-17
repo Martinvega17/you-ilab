@@ -10,6 +10,7 @@ import Contact from './components/pages/contact';
 
 import './css/contact.css';
 
+
 function App() {
   return (
     <Router>
