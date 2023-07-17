@@ -1,3 +1,33 @@
+/*
+    Theme Name: Medixer - Youth Innovation Laboratory Page
+    Author: Authore Name
+    Support: mail@gmail.com
+    Description: Youth Innovation Laboratory Page
+    Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Estilos generales
+2. Fuentes
+3. Variables de estilo
+4. Estilos de cuerpo y enlaces
+5. Estilos generales
+6. Contenedor raíz
+7. Estilos de navegación
+8. Contenedor de div
+9. Títulos
+10. Carrusel
+11. Formulario
+12. Efecto de hover
+13. Contenedor de menú
+14. Nosotros
+15. Navegación fija
+16. Animaciones de transición
+17. Estilos para colaboradores en h1 y h2
+18. Estilos sponsor
+*/
+
 /* Estilos generales */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
@@ -156,8 +186,6 @@ h2 {
 
 .nosotros {
   font-size: 60pt;
-/*   background: linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 214, 191, 255) 100%);
-  background-color: #02d3bf; */
 }
 
 .title {
@@ -272,19 +300,16 @@ nav {
   transition: opacity 1s, transform 1s;
 }
 
-
 /* Estilos para colaboradores en h1 y h2 */
 .collaborators h1,
 .collaborators h2 {
   color: #fff;
 }
 
-
 /*Estilos sponsor*/
-
 .sponser-area {
   background: linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 214, 191, 255) 100%);
-  background-color: #02d3bf;;
+  background-color: #02d3bf;
 }
 
 .align-items-start {
@@ -310,6 +335,3 @@ nav {
 .pb-100 {
   padding-bottom: 100px;
 }
-
-
-
