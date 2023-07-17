@@ -116,47 +116,6 @@
   text-align: justify;
 }
 
-/* Media queries para dispositivos con ancho máximo de 480px */
-@media (max-width: 480px) {
-  .modal .card__image {
-    width: 50%;
-    max-width: 12em;
-    max-height: 12em;
-    margin: 4em 5em 0;
-  }
-
-  .modal .card__title {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-top: 0.25em;
-    display: block;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
-
-  .modal .card__name {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 8em;
-    display: block;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
-
-  .modal .card__text {
-    overflow: auto;
-    max-height: 400px;
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-left: 5%;
-    margin-top: 1em;
-  }
-}
-
 /* Media queries para dispositivos con ancho máximo de 620px */
 @media (max-width: 620px) {
   .modal .card__image {
@@ -166,27 +125,7 @@
     margin: 4em 5em 0;
   }
 
-  .modal .card__title {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-top: 0.25em;
-    display: block;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
 
-  .modal .card__name {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 11em;
-    display: block;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
 
   .modal .card__text {
     overflow: auto;
@@ -281,26 +220,49 @@
   }
 }
 
-/* Media queries para dispositivos con ancho máximo de 430px */
-@media (max-width: 430px) {
+/* Media queries para dispositivos con ancho máximo de 620px */
+@media (max-width: 480px) {
   .modal {
-    top: 2%;
-    bottom: 3%;
+    top: 5%;
+    bottom: 5%;
     padding: 20px;
-    width: 100%;
-    height: 100%;
+    max-width: 90vw;
+    max-height: 85vh;
   }
-
+  
   .modal .card__image {
     width: 50%;
-    width: 15em;
-    height: 15em;
-    margin: 5em auto 0;
+    width: 12em;
+    height: 12em;
+    margin: 6em auto 0;
   }
 
   .modal .card__title {
     font-size: 1.8rem;
-    left: 10%;
-    width: 100%;
+    text-align: center;
+    margin: 11em auto 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    text-overflow: ellipsis;
+  }
+  
+
+  .modal .card__name {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: -2.5em auto 2em;
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .modal .card__text {
+    overflow: auto;
+    max-height: 800px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 5em 1em 0 ;
   }
 }
