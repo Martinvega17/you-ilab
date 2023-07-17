@@ -8,7 +8,7 @@ import About from './components/pages/about';
 import Projects from './components/pages/projects';
 import Contact from './components/pages/contact';
 
-import './contact.css';
+import './css/contact.css';
 
 function App() {
   return (

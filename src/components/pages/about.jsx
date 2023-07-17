@@ -73,7 +73,7 @@ const About = () => {
                     <div className="content_team md:mr-20 mb-10">
                         <div className="content">
                             <div className="title_team">
-                                <h2 className="inherit vertical-align about_us">NUESTRO EQUIPO DE TRABAJO</h2>
+                                <h2 className="inherit vertical-align text-center about_us">NUESTRO EQUIPO DE TRABAJO</h2>
                             </div>
                         </div>
                         {/* cards */}
