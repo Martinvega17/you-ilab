@@ -8,6 +8,10 @@ import dataDigital from '../components/data';
 import Modal from 'react-modal';
 import '../css/modal.css';
 
+import cv from '../assets/icons/perfil-cv.png'
+import ln from '../assets/icons/perfil-linkedin.png'
+import email from '../assets/icons/perfil-email.png'
+
 Modal.setAppElement('#root');
 
 const SwiperCarousel = () => {
@@ -89,6 +93,23 @@ const SwiperCarousel = () => {
                                 <span className="card__title">{expandedCard.profession}</span>
                                 <span className="card__name">{expandedCard.name}</span>
                                 <p className="card__text">{expandedCard.text}</p>
+                            </div>
+                            <div className="modal__links-container">
+                                {expandedCard.cv && (
+                                    <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
+                                        <img src={cv} alt="cv" />
+                                    </a>
+                                )}
+                                {expandedCard.email && (
+                                    <a href={`mailto:${expandedCard.email}`}>
+                                        <img src={email} alt="email" />
+                                    </a>
+                                )}
+                                {expandedCard.linkedin && (
+                                    <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
+                                        <img src={ln} alt="linkedin" />
+                                    </a>
+                                )}
                             </div>
                         </>
                     )}
