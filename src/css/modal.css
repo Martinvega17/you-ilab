@@ -22,6 +22,8 @@
 */
 
 /* Estilos generales del modal */
+
+/* Estilos generales del modal */
 .modal {
   position: fixed;
   top: 10%;
@@ -115,66 +117,18 @@
   text-align: justify;
 }
 
-/* Media queries para dispositivos con ancho máximo de 620px */
-@media (max-width: 620px) {
-  .modal .card__image {
-    width: 50%;
-    max-width: 17em;
-    max-height: 17em;
-    margin: 4em 5em 0;
-  }
-
-
-
-  .modal .card__text {
-    overflow: auto;
-    max-height: 400px;
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-left: 5%;
-    margin-top: 3em;
-  }
+.modal__links-container {
+  display: flex;
+  margin-top: -80px;
+  justify-items: space-between;
+  gap: 100px;
+  margin-left: 2rem;
+  justify-content: center;
 }
 
-/* Media queries para dispositivos con ancho máximo de 768px */
-@media (max-width: 768px) {
-  .modal {
-    top: 5%;
-    bottom: 5%;
-    padding: 20px;
-    max-width: 90vw;
-    max-height: 85vh;
-  }
-
-  .modal .card__image {
-    width: 50%;
-    width: 20em;
-    height: 20em;
-    margin-right: 1em;
-  }
-
-  .modal .card__title {
-    font-size: 1.8rem;
-    left: 10%;
-  }
-
-  .modal .card__name {
-    font-size: 1.5rem;
-    left: 10%;
-    top: 13%;
-  }
-
-  .modal .card__text {
-    overflow: auto;
-    max-height: 400px;
-    font-size: 1.3rem;
-    font-weight: 300;
-    top: 16em;
-    position: absolute;
-    margin-left: 5%;
-    margin-right: 1.5em;
-    text-align: justify;
-  }
+.modal__links-container img {
+  width: 70px;
+  top: 100%;
 }
 
 /* Media queries para dispositivos con ancho máximo de 1400px */
@@ -217,9 +171,131 @@
     margin-right: 1.5em;
     text-align: justify;
   }
+
+  .modal__links-container {
+    display: flex;
+    margin-top: 26em;
+    justify-items: space-between;
+    gap: 100px;
+    margin-left: 2rem;
+    justify-content: center;
+  }
+
+  .modal__links-container img {
+    width: 70px;
+    top: 100%;
+  }
+}
+
+/* Media queries para dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+  .modal {
+    top: 5%;
+    bottom: 5%;
+    padding: 20px;
+    max-width: 90vw;
+    max-height: 85vh;
+  }
+
+  .modal .card__image {
+    width: 50%;
+    width: 20em;
+    height: 20em;
+    margin-right: 1em;
+  }
+
+  .modal .card__title {
+    font-size: 1.8rem;
+    left: 10%;
+  }
+
+  .modal .card__name {
+    font-size: 1.5rem;
+    left: 10%;
+    top: 13%;
+  }
+
+  .modal .card__text {
+    overflow: auto;
+    max-height: 400px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    top: 16em;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 1.5em;
+    text-align: justify;
+  }
+
+  .modal__links-container {
+    display: flex;
+    margin-top: 26em;
+    justify-items: space-between;
+    gap: 100px;
+    margin-left: 8rem;
+    justify-content: flex-start;
+  }
+
+  .modal__links-container img {
+    width: 70px;
+    top: 100%;
+  }
 }
 
 /* Media queries para dispositivos con ancho máximo de 620px */
+@media (max-width: 620px) {
+  .modal .card__image {
+    width: 50%;
+    max-width: 14em;
+    max-height: 14em;
+    margin: 4em 5em 0;
+  }
+
+  .modal .card__text {
+    overflow: auto;
+    max-height: 400px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-left: 5%;
+    margin-top: 4em;
+  }
+
+  .modal .card__name {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: -3.2em auto 2em;
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .modal .card__title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 10em auto 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    text-overflow: ellipsis;
+  }
+
+  .modal__links-container {
+    display: flex;
+    margin-top: 32em;
+    justify-items: space-between;
+    gap: 100px;
+    margin-left: 2rem;
+    justify-content: center;
+  }
+
+  .modal__links-container img {
+    width: 70px;
+    top: 100%;
+  }
+}
+
+/* Media queries para dispositivos con ancho máximo de 480px */
 @media (max-width: 480px) {
   .modal {
     top: 5%;
@@ -228,7 +304,7 @@
     max-width: 90vw;
     max-height: 85vh;
   }
-  
+
   .modal .card__image {
     width: 50%;
     width: 12em;
@@ -239,18 +315,17 @@
   .modal .card__title {
     font-size: 1.8rem;
     text-align: center;
-    margin: 11em auto 0;
+    margin: 10em auto 0;
     display: block;
     left: 50%;
     transform: translateX(-50%);
     text-overflow: ellipsis;
   }
-  
 
   .modal .card__name {
     font-size: 1.8rem;
     text-align: center;
-    margin: -2.5em auto 2em;
+    margin: -3.2em auto 2em;
     display: block;
     text-align: center;
     left: 50%;
@@ -263,6 +338,19 @@
     font-size: 1.3rem;
     font-weight: 300;
     margin: 5em 1em 0 0;
-    padding-bottom: 7em;
+  }
+
+  .modal__links-container {
+    display: flex;
+    margin-top: 60em;
+    justify-items: space-between;
+    gap: 100px;
+    margin-left: 2rem;
+    justify-content: center;
+  }
+
+  .modal__links-container img {
+    width: 70px;
+    top: 100%;
   }
 }
