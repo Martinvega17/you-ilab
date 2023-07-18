@@ -7,6 +7,7 @@ import YIL from '../../assets/sponsors/YOU_I_ LAB_WHITE_LOGO.png'
 import DBM from '../../assets/sponsors/DBM_WHITE_LOGO.png'
 import IPICYT from '../../assets/sponsors/IPICYT.png'
 import GCIC from '../../assets/sponsors/GCIC.png'
+import collaborators from '../../assets/team/Collage_colab_.jpg'
 
 // Importar LightColor from styled-components
 const LightColor = styled.div`
@@ -57,8 +58,17 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
-
+            {/* section */}
+            <section className="">
+  <div className="relative h-full w-full z-[-1] text-center text-white">
+    <img src={collaborators} className="w-full h-full bg-contain bg-repeat"/>
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+      <h2 className="text-white text-3xl font-bold">AND THANKS YOU ALL COLLABORATORS</h2>
+      <br />
+      <h1 className="text-white text-5xl font-bold">COLLABORATORS!</h1>
+    </div>
+  </div>
+</section>
 
 
 
