@@ -60,15 +60,15 @@ const Home = () => {
             </div>
             {/* section */}
             <section className="">
-  <div className="relative h-full w-full z-[-1] text-center text-white">
-    <img src={collaborators} className="w-full h-full bg-contain bg-repeat"/>
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
-      <h2 className="text-white text-3xl font-bold">AND THANKS YOU ALL COLLABORATORS</h2>
-      <br />
-      <h1 className="text-white text-5xl font-bold">COLLABORATORS!</h1>
-    </div>
-  </div>
-</section>
+                <div className="relative h-full w-full z-[-1] text-center text-white">
+                    <img src={collaborators} className="w-full h-full bg-contain bg-repeat" />
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+                        <h2 className="text-white text-3xl font-bold">AND THANKS YOU ALL COLLABORATORS</h2>
+                        <br />
+                        <h1 className="text-white text-5xl font-bold">COLLABORATORS!</h1>
+                    </div>
+                </div>
+            </section>
 
 
 
